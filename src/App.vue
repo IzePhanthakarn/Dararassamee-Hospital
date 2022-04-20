@@ -1,14 +1,13 @@
 <template>
-  <mainpage/>
+  <div>
+  <RouterView />
+  </div>
 </template>
 
 <script>
-import mainpage from './components/mainpage.vue';
+import { RouterLink, RouterView } from "vue-router";
 export default {
   name: "App",
-  components:{
-    mainpage
-  }
 };
 </script>
 

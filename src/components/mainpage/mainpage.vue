@@ -60,7 +60,9 @@
 </template>
 
 <script>
-export default {};
+export default {
+  name: "mainpage",
+};
 </script>
 
 <style scoped>
