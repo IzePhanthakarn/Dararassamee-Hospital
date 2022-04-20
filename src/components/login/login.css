@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+}
+#backgroud{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("/public/dara-hospital.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+.form-login{
+    display: flex;
+    flex-direction: column;
+    background-color: #86083fe4;
+    width: 450px;
+    height: 550px;
+    border-radius: 30px;
+}
+.logo-login{
+    display:flex;
+    margin-top: 20px;
+    justify-content: center;
+}
+.identity-number{
+    margin-top: 40px;
+    display:flex;
+    justify-content: center;
+    transition: .5s;
+    cursor: pointer;
+}
+input{
+    border: none;
+    height: 50px;
+    width: 250px;
+    margin: 10px 0;
+    padding: 0 10px;
+    font-size: 1rem;
+}
+.text-box{
+    border-radius: 5px;
+    text-align: center;
+}
+.text-box:placeholder{
+    color:#fff;
+}
+.text-box:hover,
+.text-box:focus{
+    background: rgba(255, 255, 255, 0.76);
+    width: 300px;
+    color:#bd052a
+}
+.content-button{
+    margin-top: 60px;
+    margin-bottom: 20px;
+    display:flex;
+    justify-content: center;
+}
+.confirm-button{
+}
