@@ -1,79 +1,37 @@
 <template>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <strong>Happy Cop</strong>
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Dropdown
-              </a>
-              <ul
-                class="dropdown-menu dropdown-menu-end"
-                aria-labelledby="navbarDropdown"
-              >
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <hr class="dropdown-divider" />
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
+  <div class="main">
+    <header>
+      <navbar />
+    </header>
+    <div class="body">
+      <div class="body-box">
+        <div class="first-column">
+          <img src="/public/news.jpg" alt="">
+        </div>
+        <div class="second-column">
+          <div class="obtions">
+            <div class="info-list">
+              <button class="info-btn">ประวัติการรักษา</button>
+              <button class="info-btn">ศูนย์ความรู้</button>
+              <button class="info-btn">แบบประเมิน</button>
+            </div>
+          </div>
+          <div class="appointment">
+            <button class="btn-appointment">วันนัดพบแพทย์</button>
+          </div>
         </div>
       </div>
-    </nav>
-  </header>
-  <main>
-    <h1>Welcome</h1>
-  </main>
+    </div>
+  </div>
 </template>
 
 <script>
+import navbar from "./navbar.vue";
+import "./mainpage.css";
 export default {
   name: "mainpage",
+  components: {
+    navbar,
+  },
 };
 </script>
-
-<style scoped>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.logo {
-  background: #000;
-  color: #fff;
-}
-</style>
