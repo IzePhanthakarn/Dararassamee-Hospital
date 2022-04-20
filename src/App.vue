@@ -1,9 +1,15 @@
 <template>
-  <h1>HELLO WORLD</h1>
+  <mainpage/>
 </template>
 
 <script>
-export default {};
+import mainpage from './components/mainpage.vue';
+export default {
+  name: "App",
+  components:{
+    mainpage
+  }
+};
 </script>
 
 <style></style>
