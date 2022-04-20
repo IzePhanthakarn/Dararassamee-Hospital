@@ -27,7 +27,6 @@
 
 <script>
 import navbar from "./navbar.vue";
-import "./mainpage.css";
 export default {
   name: "mainpage",
   components: {
@@ -35,3 +34,125 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .main {
+    background-image: url("/public/dara-hospital.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .body {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .body-box {
+    background-color: lightgray;
+    height: 80%;
+    width: 80%;
+    display: flex;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .first-column {
+    width: 70%;
+    height: 100%;
+    /* background: red; */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .first-column img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .second-column {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .obtions {
+    width: 100%;
+    height: 60%;
+    /* background: #8954; */
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .info-list {
+    width: 90%;
+    height: 80%;
+    background-color: #80073c;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .info-list button {
+    width: 70%;
+    height: 75px;
+    border-radius: 20px;
+    border: none;
+    font-size: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all .5s;
+  
+  }
+  .appointment {
+    width: 100%;
+    height: 40%;
+    /* background: #890; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .appointment button {
+    width: 80%;
+    height: 35%;
+    border-radius: 30px;
+    border: 5px solid #80073c;
+    font-size: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all .5s;
+  }
+  
+  .appointment button:hover,
+  .info-list button:hover{
+      transform: scale(1.05);
+  }
+  
+  .appointment button:active,
+  .info-list button:active{
+      transform: scale(.95);
+  }
+</style>
