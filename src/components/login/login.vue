@@ -36,9 +36,10 @@
 </template>
 
 <script>
-import "./login.css";
 export default {
   name: "login",
 };
 </script>
-<style></style>
+<style scoped>
+@import url("./login.css");
+</style>

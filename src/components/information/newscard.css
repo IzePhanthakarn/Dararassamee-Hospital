@@ -1,0 +1,35 @@
+.news-box {
+    width: 330px;
+    height: 350px;
+    background: #fff;
+    border-radius: 20px;
+    transition: all 0.3s;
+    border: solid 1px #80073c;
+  }
+  .news-box:hover {
+    transform: scale(1.05);
+  }
+  .img-newsbox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: #000; */
+    padding: 10px;
+  }
+  .img-newsbox img {
+    width: 90%;
+  }
+  .text-newsbox {
+    padding: 0 20px;
+  }
+  .text-newsbox h4 a {
+    text-decoration: none;
+    color: #000;
+  }
+  .text-newsbox p {
+    margin: 7px 0;
+  }
+  .readmore{
+      color: #80073c;
+  }
