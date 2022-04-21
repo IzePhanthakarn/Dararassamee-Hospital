@@ -24,7 +24,7 @@
             <router-link class="nav-link" to="/profile">ข้อมูล</router-link>
           </li>
           <li class="nav-item1 mx-4">
-            <router-link class="nav-link" to="/information">ประวัติ</router-link>
+            <router-link class="nav-link" to="/history">ประวัติ</router-link>
           </li>
           <li class="nav-item1 ms-4">
             <router-link class="nav-link" to="/contact">ติดต่อ</router-link>
@@ -57,30 +57,6 @@ export default {
 .nav-link {
   font-size: 20px;
 }
-/* .logout-bg {
-  display: flex;
-  align-items: center;
-  background: #a54b72;
-  border-radius: 5px;
-  height: 40px;
-  width: 140px;
-  
-  transition: all .3s;
-}
-.logout-bg:hover{
-  transform: scale(1.05);
-}
-
-.logout-btn {
-  color: #fff;
-  text-decoration: none;
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
-  padding-bottom: 3px;
-} */
 .logout-bg{
   /* height: 50px; */
   margin: 4px 0;
@@ -93,7 +69,7 @@ button.logout-btn{
   font-size: 20px;
   border: none;
   border-radius: 5px;
-  background-color: #a54b72;
+  background: #b30a53;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transition: all .3s;
 }
