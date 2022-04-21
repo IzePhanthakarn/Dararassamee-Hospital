@@ -6,18 +6,20 @@
     <div class="body">
       <div class="body-box container-fluid">
         <div class="first-column">
-          <img src="/public/news.jpg" alt="">
+          <img src="/public/news.jpg" alt="" />
         </div>
         <div class="second-column">
           <div class="obtions">
             <div class="info-list">
-              <button class="info-btn">ประวัติการรักษา</button>
-              <button class="info-btn">ศูนย์ความรู้</button>
-              <button class="info-btn">แบบประเมิน</button>
+              <button @click="gohistory" class="info-btn">
+                ประวัติการรักษา
+              </button>
+              <button @click="goinfo" class="info-btn">ศูนย์ความรู้</button>
+              <button @click="goevaluation" class="info-btn">แบบประเมิน</button>
             </div>
           </div>
           <div class="appointment">
-            <button class="btn-appointment">วันนัดพบแพทย์</button>
+            <button @click="gomeetdate" class="btn-appointment">วันนัดพบแพทย์</button>
           </div>
         </div>
       </div>
@@ -26,11 +28,27 @@
 </template>
 
 <script>
+import { RouterLink } from "vue-router";
 import navbar from "./navbar.vue";
+import { useRouter } from "vue-router";
 export default {
   name: "mainpage",
   components: {
     navbar,
+  },
+  methods: {
+    gohistory() {
+      return this.$router.push("/history");
+    },
+    goinfo() {
+      return this.$router.push("/information");
+    },
+    goevaluation() {
+      return this.$router.push("/evaluation");
+    },
+    gomeetdate(){
+      return this.$router.push("/meetdate")
+    }
   },
 };
 </script>
