@@ -36,9 +36,157 @@
 </template>
 
 <script>
-import "./login.css";
+// import "./login.css";
 export default {
   name: "login",
 };
 </script>
-<style></style>
+<style scoped>
+* {
+  box-sizing: border-box;
+}
+#backgroud {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/public/dara-hospital.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #86083fe4;
+  width: 450px;
+  height: 550px;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.logo-login {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+}
+.identity-number {
+  width: 350px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+}
+.password {
+  width: 350px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+}
+.label-input {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+input {
+  border: none;
+  height: 50px;
+  width: 100%;
+  margin: 10px 0;
+  padding: 0 10px;
+  font-size: 1rem;
+}
+.text-box {
+  border-radius: 5px;
+  text-align: start;
+}
+.text-box:placeholder {
+  color: #fff;
+}
+.text-box:hover,
+.text-box:focus {
+  background: rgba(255, 255, 255, 0.874);
+  width: 350px;
+  color: #5d0022;
+}
+.extension {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.remember {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100px;
+  height: 50px;
+}
+.remember input {
+  width: 20px;
+}
+.remember p {
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0px;
+}
+.forgot-button {
+  border: none;
+  width: 100px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all 0.3s;
+  background: none;
+  text-decoration-line: underline;
+}
+.forgot-button:hover {
+  transform: scale(1.1);
+}
+.content-button {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.confirm-button {
+  border: none;
+  width: 140px;
+  height: 45px;
+  border-radius: 10px;
+  background-color: #5d0022;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  transition: all 0.3s;
+  /* padding: 10px 0;  */
+}
+.confirm-button:hover {
+  transform: scale(1.1);
+}
+.register-button {
+  border: none;
+  width: 140px;
+  height: 45px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  transition: all 0.3s;
+  background: none;
+  text-decoration-line: underline;
+}
+.register-button:hover {
+  transform: scale(1.1);
+}
+</style>

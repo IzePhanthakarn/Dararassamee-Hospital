@@ -101,6 +101,7 @@ export default {
   border-radius: 5px;
   text-align: start;
   height: 50px;
+  width: 350px;
   border: none;
 }
 .text-box:hover,
