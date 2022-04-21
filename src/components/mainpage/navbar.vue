@@ -1,9 +1,9 @@
 <template>
   <nav class="navbar navbar-box navbar-expand-lg navbar-dark static-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
+      <router-link class="navbar-brand" to="/mainpage">
         <strong>Happy Cop.</strong>
-      </a>
+      </router-link>
       <button
         class="navbar-toggler"
         type="button"
@@ -18,16 +18,16 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item1 mx-4">
-            <a class="nav-link" aria-current="page" href="#">หน้าหลัก</a>
+            <router-link class="nav-link" aria-current="page" to="/mainpage">หน้าหลัก</router-link>
           </li>
           <li class="nav-item1 mx-4">
-            <a class="nav-link" href="#">ข้อมูล</a>
+            <router-link class="nav-link" to="/profile">ข้อมูล</router-link>
           </li>
           <li class="nav-item1 mx-4">
-            <a class="nav-link" href="#">ประวัติ</a>
+            <router-link class="nav-link" to="/information">ประวัติ</router-link>
           </li>
           <li class="nav-item1 ms-4">
-            <a class="nav-link" href="#">ติดต่อ</a>
+            <router-link class="nav-link" to="/contact">ติดต่อ</router-link>
           </li>
         </ul>
       </div>
