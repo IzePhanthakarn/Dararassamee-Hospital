@@ -1,17 +1,17 @@
 <template>
-  <form id="backgroud-register" action="">
-    <div class="form-register">
-      <div class="content-back-button-register">
-        <button class="back-button-register">
+  <form id="backgroud-forgot" action="">
+    <div class="form-forgot">
+      <div class="content-back-button-forgot">
+        <button class="back-button-forgot">
           <fa :icon="['fas', 'arrow-left']" />
           <span> ย้อนกลับ</span>
         </button>
       </div>
-      <div class="logo-register">
-        <h1>สมัครสมาชิก</h1>
+      <div class="logo-forgot">
+        <h1>ลืมรหัสผ่าน</h1>
       </div>
-      <div class="box-input-form-register">
-        <div class="input-form-register">
+      <div class="box-input-form-forgot">
+        <div class="input-form-forgot">
           <h2 class="label-input">เลขบัตรประจำตัวประชาชน</h2>
           <input
             class="text-box"
@@ -19,45 +19,29 @@
             placeholder="กรุณาใส่เลขบัตรประชาชน"
           />
         </div>
-        <div class="input-form-register">
+        <div class="input-form-forgot">
           <h2 class="label-input">เบอร์โทรศัพท์</h2>
           <input class="text-box" type="text" placeholder="กรุณาใส่รหัสผ่าน" />
         </div>
-        <div class="input-form-register">
-          <h2 class="label-input">รหัสผ่าน</h2>
-          <input
-            class="text-box"
-            type="password"
-            placeholder="กรุณาใส่รหัสผ่าน"
-          />
-        </div>
-        <div class="input-form-register">
-          <h2 class="label-input">ยืนยันรหัสผ่าน</h2>
-          <input
-            class="text-box"
-            type="password"
-            placeholder="กรุณาใส่รหัสผ่าน"
-          />
-        </div>
       </div>
-      <div class="content-button-register">
-        <button type="button" class="confirm-button-register">ยืนยัน</button>
+      <div class="content-button-forgot">
+        <button type="button" class="confirm-button-forgot">ยืนยัน</button>
       </div>
     </div>
   </form>
 </template>
 
 <script>
-// import "./register.css";
+
 export default {
-  name: "register",
+  name: "forgot",
 };
 </script>
 <style scoped>
 * {
   box-sizing: border-box;
 }
-#backgroud-register {
+#backgroud-forgot {
   margin: 0;
   width: 100vw;
   height: 100vh;
@@ -69,7 +53,7 @@ export default {
   align-items: center;
   justify-content: center;
 }
-.form-register {
+.form-forgot {
   display: flex;
   flex-direction: column;
   background-color: #86083fe4;
@@ -78,35 +62,35 @@ export default {
   border-radius: 30px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.content-back-button-register {
+.content-back-button-forgot {
   margin-top: 10px;
   margin-left: 15px;
 }
-.back-button-register {
+.back-button-forgot {
   border: none;
   background: none;
   text-decoration-line: underline;
   color: #fff;
 }
-.logo-register {
+.logo-forgot {
   display: flex;
   justify-content: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 40px;
 }
-.logo-register h1 {
+.logo-forgot h1 {
   color: #fff;
   font-weight: bold;
 }
-.box-input-form-register {
+.box-input-form-forgot {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.input-form-register {
+.input-form-forgot {
   width: 350px;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 .label-input {
   font-size: 18px;
@@ -124,13 +108,13 @@ export default {
   background: rgba(255, 255, 255, 0.874);
   color: #5d0022;
 }
-.content-button-register {
-  margin-top: 20px;
+.content-button-forgot {
+  margin-top: 70px;
   margin-left: 260px;
   display: flex;
   width: 100%;
 }
-.confirm-button-register {
+.confirm-button-forgot{
   border: none;
   width: 140px;
   height: 45px;
@@ -141,7 +125,7 @@ export default {
   font-size: 18px;
   transition: all 0.3s;
 }
-.confirm-button-register:hover {
+.confirm-button-forgot:hover {
   transform: scale(1.1);
 }
 </style>
