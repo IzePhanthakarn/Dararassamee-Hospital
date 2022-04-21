@@ -4,6 +4,9 @@ import MainPageView from "../views/MainPageView.vue";
 import LoginView from "../views/LoginView.vue";
 import InformationView from "../views/InformationView.vue";
 import ContactView from "../views/ContactView.vue";
+import ForgotView from "../views/ForgotView.vue";
+import ForgotFolloView from "../views/ForgotFollowView.vue";
+import ProfileView from "../views/ProfileView.vue"
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -32,6 +35,21 @@ const router = createRouter({
       path: "/contact",
       name: "contact",
       component: ContactView,
+    },
+    {
+      path: "/forgot",
+      name: "forgot",
+      component: ForgotView,
+    },
+    {
+      path: "/forgot-following",
+      name: "forgot-following",
+      component: ForgotFolloView,
+    },
+    {
+      path: "/profile",
+      name: "profile",
+      component: ProfileView,
     },
   ],
 });
