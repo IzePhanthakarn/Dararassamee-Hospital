@@ -1,6 +1,6 @@
 <template>
   <header>
-    <navbar />
+    <Navbar />
   </header>
   <body>
     <div class="body-box container-fluid">
@@ -47,19 +47,19 @@
         </div>
       </div>
       <div class="other-information">
-        <listnews :newscards="newscards" />
+        <Listnews :newscards="newscards" />
       </div>
     </div>
   </body>
 </template>
 
 <script>
-import navbar from "../mainpage/navbar.vue";
-import listnews from './listnews.vue';
+import Navbar from "../mainpage/navbar.vue";
+import Listnews from './listnews.vue';
 export default {
   components: {
-    navbar,
-    listnews
+    Navbar,
+    Listnews
   },
   data(){
     return{

@@ -1,7 +1,7 @@
 <template>
   <div class="main">
     <header>
-      <navbar />
+      <Navbar />
     </header>
     <div class="body">
       <div class="body-box container-fluid">
@@ -19,7 +19,7 @@
             </div>
           </div>
           <div class="appointment">
-            <button @click="gomeetdate" class="btn-appointment">วันนัดพบแพทย์</button>
+            <button @click="goappointment" class="btn-appointment">วันนัดพบแพทย์</button>
           </div>
         </div>
       </div>
@@ -29,12 +29,12 @@
 
 <script>
 import { RouterLink } from "vue-router";
-import navbar from "./navbar.vue";
+import Navbar from "./navbar.vue";
 import { useRouter } from "vue-router";
 export default {
   name: "mainpage",
   components: {
-    navbar,
+    Navbar,
   },
   methods: {
     gohistory() {
@@ -46,8 +46,8 @@ export default {
     goevaluation() {
       return this.$router.push("/evaluation");
     },
-    gomeetdate(){
-      return this.$router.push("/meetdate")
+    goappointment(){
+      return this.$router.push("/appointment")
     }
   },
 };

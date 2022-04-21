@@ -7,7 +7,9 @@ import ContactView from "../views/ContactView.vue";
 import ForgotView from "../views/ForgotView.vue";
 import ForgotFolloView from "../views/ForgotFollowView.vue";
 import ProfileView from "../views/ProfileView.vue"
-
+import HistoryView from "../views/HistoryView.vue"
+import EvaluationView from "../views/EvaluationView.vue"
+import AppointmentView from "../views/AppointmentView.vue"
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -18,12 +20,27 @@ const router = createRouter({
       component: RegisterView,
     },
     {
+      path: "/history",
+      name: "history",
+      component: HistoryView,
+    },
+    {
+      path: "/appointment",
+      name: "appointment",
+      component: AppointmentView,
+    },
+    {
+      path: "/evaluation",
+      name: "evaluation",
+      component: EvaluationView,
+    },
+    {
       path: "/mainpage",
       name: "mainpage",
       component: MainPageView,
     },
     {
-      path: "/login",
+      path: "/",
       name: "login",
       component: LoginView,
     },

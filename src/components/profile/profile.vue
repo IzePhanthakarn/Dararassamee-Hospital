@@ -1,6 +1,6 @@
 <template>
   <header>
-    <navbar />
+    <Navbar />
   </header>
   <body>
     <div class="body-box container-fluid">
@@ -34,10 +34,10 @@
 </template>
 
 <script>
-import navbar from "../mainpage/navbar.vue";
+import Navbar from "../mainpage/navbar.vue";
 export default {
   components: {
-    navbar,
+    Navbar,
   },
 };
 </script>

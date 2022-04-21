@@ -1,5 +1,5 @@
 <template>
-    <newscard 
+    <NewsCard 
         v-for="(item,index) in newscards.slice(1)" 
         
         :key="index"
@@ -11,10 +11,10 @@
 </template>
 
 <script>
-import newscard from "./newscard.vue";
+import NewsCard from "./newscard.vue";
 export default {
   components: {
-    newscard,
+    NewsCard,
   },
   props:["newscards"]
 };

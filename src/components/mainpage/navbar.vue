@@ -24,7 +24,7 @@
             <router-link class="nav-link" to="/profile">ข้อมูล</router-link>
           </li>
           <li class="nav-item1 mx-4">
-            <router-link class="nav-link" to="/information">ประวัติ</router-link>
+            <router-link class="nav-link" to="/history">ประวัติ</router-link>
           </li>
           <li class="nav-item1 ms-4">
             <router-link class="nav-link" to="/contact">ติดต่อ</router-link>
