@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.edit-icon {
+  font-size: 40px;
+  margin-right: 10px;
+}
+.main {
+  background-image: url("/public/dara-hospital.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.body {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.body-box {
+  background-color: lightgray;
+  height: 80%;
+  /* width: 80%; */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 30px;
+  display: flex;
+}
+.body-box-map {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+.box-map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60%;
+  width: 100%;
+  padding-bottom: 10px;
+}
+.box-map img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+.body-box-info-contact {
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  height: 40%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px 10px 10px;
+}
+.box-location {
+  
+  display: flex;
+  align-items: flex-start;
+  height: 45%;
+  width: 100%;
+}
+.box-location p {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+.box-telephone {
+  
+  display: flex;
+  height: 27.5%;
+  width: 100%;
+  align-items: flex-start;
+}
+.box-telephone p {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 5px;
+}
+.box-info-email {
+  padding-top: 5px;
+  display: flex;
+  height: 27.5%;
+  width: 100%;
+  align-items: flex-start;
+}
+.box-info-email p {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 4px;
+}
+.body-box-email-contact {
+  height: 100%;
+  width: 60%;
+}
+.body-form-email {
+  padding-left: 20px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form-email {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: #86083fe4;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.logo-email {
+  display: flex;
+  margin: 0 0 15px 0;
+}
+.logo-email h1 {
+  color: #fff;
+  font-weight: bold;
+}
+.box-input-form-email {
+  display: flex;
+  flex-direction: column;
+}
+.box-input-form-email-first {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.input-form-email-one {
+  width: 50%;
+  margin-top: 20px;
+  padding-right: 10px;
+}
+.input-form-email-one input {
+  margin-top: 3px;
+  border-radius: 5px;
+  height: 40px;
+  width: 100%;
+  border: none;
+  padding-right: 10px;
+  padding-left: 10px;
+  outline: none;
+}
+.input-form-email-two {
+  width: 50%;
+  margin-top: 20px;
+  padding-left: 10px;
+}
+.input-form-email-two input {
+  margin-top: 3px;
+  border-radius: 5px;
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.box-input-form-email-second {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.input-form-email-three {
+  width: 100%;
+  margin-top: 20px;
+}
+.input-form-email-three input {
+  border-radius: 5px;
+  margin-top: 3px;
+  height: 40px;
+  width: 100%;
+  border: none;
+  padding-right: 10px;
+  padding-left: 10px;
+  outline: none;
+}
+.input-form-email-four {
+  width: 100%;
+  margin-top: 20px;
+}
+.input-form-email-four textarea {
+  border-radius: 5px;
+  margin-top: 3px;
+  height: 75px;
+  width: 100%;
+  border: none;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 5px;
+  outline: none;
+}
+.label-input {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+.content-button-email {
+  margin: 25px 0 0 0;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+.confirm-button-email {
+  border: none;
+  width: 140px;
+  height: 45px;
+  border-radius: 10px;
+  background-color: #5d0022;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  transition: all 0.3s;
+}
+.confirm-button-email:hover {
+  transform: scale(1.1);
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .container-fluid {
+    width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container-fluid {
+    width: 1320px;
+  }
+}
+@media (min-width: 1600px) {
+  .container-fluid {
+    width: 1570px;
+  }
+}

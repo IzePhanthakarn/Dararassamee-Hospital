@@ -101,6 +101,7 @@ export default {
   text-align: start;
   height: 50px;
   border: none;
+  width: 350px;
 }
 .text-box:hover,
 .text-box:focus {
