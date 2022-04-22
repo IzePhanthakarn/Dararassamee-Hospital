@@ -30,7 +30,7 @@
             <router-link class="nav-link" to="/contact">ติดต่อ</router-link>
           </li>
           <li class="nav-item ms-4 logout-bg">
-            <button class="logout-btn" href="#">ออกจากระบบ</button>
+            <button @click="logout" class="logout-btn" >ออกจากระบบ</button>
           </li>
         </ul>
       </div>
@@ -41,6 +41,11 @@
 <script>
 export default {
   name: "navbar",
+  methods:{
+    logout(){
+      return this.$router.push("/")
+    }
+  }
 };
 </script>
 

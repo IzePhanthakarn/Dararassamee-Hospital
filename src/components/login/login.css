@@ -16,7 +16,8 @@
 .form-login {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  padding: 20px;
   align-items: center;
   background-color: #86083fe4;
   width: 450px;
@@ -26,41 +27,29 @@
 }
 .logo-login {
   display: flex;
-  margin-top: 20px;
   justify-content: center;
+  margin: 0 0 25px 0;
 }
 .identity-number {
   width: 350px;
-  margin-top: 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  cursor: pointer;
+  margin: 0 0 15px 0;
 }
 .password {
     width: 350px;
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    cursor: pointer;
+    margin: 0 0 15px 0;
   }
 .label-input {
   font-size: 18px;
   font-weight: bold;
   color: #fff;
 }
-input {
-  border: none;
-  height: 50px;
-  width: 100%;
-  margin: 10px 0;
-  padding: 0 10px;
-  font-size: 1rem;
-}
 .text-box {
   border-radius: 5px;
   text-align: start;
+  border: none;
+  height: 50px;
+  width: 100%;
+  font-size: 1rem;
 }
 .text-box:placeholder {
   color: #fff;
@@ -72,22 +61,24 @@ input {
   color: #5d0022;
 }
 .extension {
-  margin-top: 10px;
-  width: 100%;
+  padding: 0;
+  width: 350px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  
 }
 .remember {
   display: flex;
   align-items: center;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 100px;
-  height: 50px;
+  justify-content: flex-start;
+  width: 50%;
 }
 .remember input {
+  border: none;
+  height: 20px;
   width: 20px;
+  margin: 0 8px 0 0;
+  font-size: 1rem;
 }
 .remember p {
   color: #fff;
@@ -96,21 +87,22 @@ input {
   margin: 0px;
 }
 .forgot-button {
+  background: none;
   border: none;
-  width: 100px;
+  width: 50%;
   color: #fff;
   font-weight: bold;
   font-size: 14px;
+  text-align: end;
   transition: all 0.3s;
-  background: none;
+
   text-decoration-line: underline;
 }
 .forgot-button:hover {
   transform: scale(1.1);
 }
 .content-button {
-  margin-top: 40px;
-  margin-bottom: 30px;
+  margin:35px 0 0 0;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -126,7 +118,6 @@ input {
   font-weight: bold;
   font-size: 18px;
   transition: all 0.3s;
-  /* padding: 10px 0;  */
 }
 .confirm-button:hover {
   transform: scale(1.1);

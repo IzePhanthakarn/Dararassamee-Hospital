@@ -26,8 +26,8 @@
         <p>ที่อยู่ : 72/6 หมู่ 7 ตำบลสุขใจ อำเภอสบายดี จังหวัดอร่อยดี 72130</p>
       </div>
       <div class="profile-info">
-        <button class="ch-password">เปลี่ยนรหัสผ่าน</button>
-        <button class="edit-data">แก้ไขข้อมูลส่วนตัว</button>
+        <button @click="changepassword" class="ch-password">เปลี่ยนรหัสผ่าน</button>
+        <button @click="editprofile" class="edit-data">แก้ไขข้อมูลส่วนตัว</button>
       </div>
     </div>
   </body>
@@ -39,6 +39,14 @@ export default {
   components: {
     Navbar,
   },
+  methods:{
+    changepassword(){
+      return this.$router.push("/forgot")
+    },
+    editprofile(){
+      return this.$router.push("/")
+    }
+  }
 };
 </script>
 
