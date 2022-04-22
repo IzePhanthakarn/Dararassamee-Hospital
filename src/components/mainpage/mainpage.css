@@ -20,7 +20,7 @@
   }
   .body-box {
     background-color: lightgray;
-    height: 80%;
+    height: 700px;
     /* width: 80%; */
     background: rgba(255, 255, 255, 0.2);
     border-radius: 16px;
@@ -31,6 +31,8 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 30px;
     display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .first-column {
@@ -51,21 +53,42 @@
   
   .second-column {
     width: 30%;
-    height: 100%;
+    height: 80%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
   }
-  
+  .status{
+    width: 90%;
+    height: 90px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+  }
+  .normal-status{
+    background: lightgreen;
+    border: solid 2px green;
+  }
+  .warning-status{
+    background: rgb(253, 253, 201);
+    border: solid 2px orange;
+  }
+  .danger-status{
+    background: lightpink;
+    border: solid 2px rgb(168, 0, 0);
+  }
   .obtions {
     width: 100%;
-    height: 50%;
+    height: 300px;
     /* background: #8954; */
     background: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 10px 0;
   }
   
   .info-list {
@@ -82,7 +105,7 @@
   
   .info-list button {
     width: 70%;
-    height: 75px;
+    height: 70px;
     border-radius: 20px;
     border: none;
     font-size: 25px;
@@ -91,8 +114,8 @@
   
   }
   .appointment {
-    width: 80%;
-    height: 15%;
+    width: 90%;
+    height: 90px;
     display: flex;
     justify-content: center;
     align-items: center;
