@@ -1,6 +1,6 @@
 <template>
     <NewsCard 
-        v-for="(item,index) in newscards.slice(1)" 
+        v-for="(item,index) in newscards" 
         
         :key="index"
         :picture="item.picture" 
