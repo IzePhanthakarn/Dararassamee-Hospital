@@ -13,13 +13,12 @@
             <div class="box-location">
               <fa :icon="['fas', 'map-location-dot']" class="edit-icon" />
               <p>
-                888/2 โรงพยาบาลดาปี ถนนมาลัยแมน ตำบลบางตลาด อำเภอบางมาก
-                จังหวัดเบาบาง 7300
+                โรงพยาบาลดารารัศมี 101 ตำบล ริมใต้ อำเภอ แม่ริม จังหวัด เชียงใหม่ 50180
               </p>
             </div>
             <div class="box-telephone">
               <fa :icon="['fas', 'phone-volume']" class="edit-icon" />
-              <p>092-xxxxxxxxx (agent)</p>
+              <p>053-299-167 (agent)</p>
             </div>
             <div class="box-info-email">
               <fa :icon="['fas', 'envelope']" class="edit-icon" />
