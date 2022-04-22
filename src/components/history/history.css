@@ -1,5 +1,72 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.body-box {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0;
+}
+.history-title {
+  display: flex;
+  margin-bottom: 30px;
+}
+.history-icon {
+  font-size: 50px;
+  margin-right: 15px;
+  color: #80073c;
+}
+.history-area {
+  width: 100%;
+  height: auto;
+  background: rgba(125, 6, 51, 0.35);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
+  border-radius: 30px;
+  border: solid 2px #80073c;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media (min-width: 576px) {
+  .container-fluid {
+    width: 100%;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .container-fluid {
+    width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container-fluid {
+    width: 720px;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .container-fluid {
+    width: 960px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .container-fluid {
+    width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container-fluid {
+    width: 1320px;
+  }
+}
+@media (min-width: 1600px) {
+  .container-fluid {
+    width: 1570px;
+  }
 }
