@@ -1,5 +1,138 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.body-box {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0;
+}
+.appointment-title {
+  display: flex;
+  /* margin-top: 20px; */
+}
+.calendar-icon {
+  font-size: 50px;
+  margin-right: 10px;
+  color: #80073c;
+}
+.box-meet-date {
+  margin: 30px 0 10px 0;
+  width: 100%;
+  height: auto;
+  background: rgba(125, 6, 51, 0.35);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
+  border-radius: 30px;
+  border: solid 2px #80073c;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.meet-data {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.meet-data p {
+  background: #80073c;
+  color: #ffffff;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  margin: 0;
+  width: 90%;
+  padding: 5px 30px;
+  font-size: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 3px 3px 5px 0 rgba(0, 0, 0, 0.19);
+}
+.details-meet {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.details-meet p {
+  background: #ffffff;
+  margin: 0;
+  border: none;
+  width: 90%;
+  padding: 5px 30px;
+  font-size: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 3px 3px 5px 0 rgba(0, 0, 0, 0.19);
+}
+.doctor-name {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.doctor-name p {
+  background: #ffffff;
+  border: none;
+  margin: 0;
+  width: 90%;
+  padding: 5px 30px;
+  font-size: 25px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 3px 3px 5px 0 rgba(0, 0, 0, 0.19);
+}
+.profile-info {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+.profile-info button {
+  width: 250px;
+  height: 60px;
+  font-size: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+@media (min-width: 576px) {
+  .container-fluid {
+    width: 100%;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .container-fluid {
+    width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container-fluid {
+    width: 720px;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .container-fluid {
+    width: 960px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .container-fluid {
+    width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container-fluid {
+    width: 1320px;
+  }
+}
+@media (min-width: 1600px) {
+  .container-fluid {
+    width: 1570px;
+  }
+}
+
+.change-border {
+  border-bottom: 10px;
 }
