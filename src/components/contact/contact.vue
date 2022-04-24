@@ -13,7 +13,8 @@
             <div class="box-location">
               <fa :icon="['fas', 'map-location-dot']" class="edit-icon" />
               <p>
-                โรงพยาบาลดารารัศมี 101 ตำบล ริมใต้ อำเภอ แม่ริม จังหวัด เชียงใหม่ 50180
+                โรงพยาบาลดารารัศมี 101 ตำบล ริมใต้ อำเภอ แม่ริม จังหวัด
+                เชียงใหม่ 50180
               </p>
             </div>
             <div class="box-telephone">
@@ -40,17 +41,20 @@
                   </div>
                   <div class="input-form-email-two">
                     <h2 class="label-input">อีเมลล์</h2>
-                    <input type="text" placeholder="กรุณาใส่รหัสผ่าน" />
+                    <input type="text" placeholder="กรุณาใส่อีเมลล์" />
                   </div>
                 </div>
                 <div class="box-input-form-email-second">
                   <div class="input-form-email-three">
                     <h2 class="label-input">หัวข้อที่จะแจ้ง</h2>
-                    <input type="text" placeholder="กรุณาใส่รหัสผ่าน" />
+                    <input type="text" placeholder="กรุณาใส่หัวข้อที่จะแจ้ง" />
                   </div>
                   <div class="input-form-email-four">
                     <h2 class="label-input">เนื้อหาที่จะแจ้ง</h2>
-                    <textarea type="text" placeholder="กรุณาใส่รหัสผ่าน" />
+                    <textarea
+                      type="text"
+                      placeholder="กรุณาใส่เนื้อหาที่จะแจ้ง"
+                    />
                   </div>
                 </div>
               </div>
