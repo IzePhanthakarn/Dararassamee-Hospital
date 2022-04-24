@@ -18,7 +18,9 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item1 mx-4">
-            <router-link class="nav-link" aria-current="page" to="/mainpage">หน้าหลัก</router-link>
+            <router-link class="nav-link" aria-current="page" to="/mainpage"
+              >หน้าหลัก</router-link
+            >
           </li>
           <li class="nav-item1 mx-4">
             <router-link class="nav-link" to="/profile">ข้อมูล</router-link>
@@ -30,7 +32,7 @@
             <router-link class="nav-link" to="/contact">ติดต่อ</router-link>
           </li>
           <li class="nav-item ms-4 logout-bg">
-            <button @click="logout" class="logout-btn" >ออกจากระบบ</button>
+            <button @click="logout" class="logout-btn">ออกจากระบบ</button>
           </li>
         </ul>
       </div>
@@ -41,11 +43,11 @@
 <script>
 export default {
   name: "navbar",
-  methods:{
-    logout(){
-      return this.$router.push("/")
-    }
-  }
+  methods: {
+    logout() {
+      return this.$router.push("/");
+    },
+  },
 };
 </script>
 
@@ -53,6 +55,9 @@ export default {
 .navbar {
   background-color: #80073c;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.container-fluid {
+  width: 1570px;
 }
 .navbar-brand {
   font-size: 30px;
@@ -62,11 +67,11 @@ export default {
 .nav-link {
   font-size: 20px;
 }
-.logout-bg{
+.logout-bg {
   /* height: 50px; */
   margin: 4px 0;
 }
-button.logout-btn{
+button.logout-btn {
   width: 140px;
   height: 35px;
   padding-bottom: 5px;
@@ -76,53 +81,44 @@ button.logout-btn{
   border-radius: 5px;
   background: #b30a53;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  transition: all .3s;
+  transition: all 0.3s;
 }
-button.logout-btn:hover{
+button.logout-btn:hover {
   transform: scale(1.05);
 }
-button.logout-btn:active{
-  transform: scale(.95);
+button.logout-btn:active {
+  transform: scale(0.95);
 }
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
+
+@media (max-width: 1600px) {
+  .container-fluid {
+    max-width: 1320px;
+  }
+}
+@media (max-width: 1400px) {
+  .container-fluid {
+    max-width: 1140px;
+  }
+}
+@media (max-width: 1200px) {
+  .container-fluid {
+    max-width: 960px;
+  }
+}
+@media (max-width: 992px) {
+  .container-fluid {
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-fluid {
+    width: 670px;
+  }
+}
+@media (max-width: 670px) {
   .container-fluid {
     width: 100%;
-  }
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  .container-fluid {
-    width: 540px;
-  }
-}
-@media (min-width: 768px) {
-  .container-fluid {
-    width: 720px;
-  }
-}
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  .container-fluid {
-    width: 960px;
-  }
-}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  .container-fluid {
-    width: 1140px;
-  }
-}
-@media (min-width: 1400px) {
-  .container-fluid {
-    width: 1320px;
-  }
-}
-@media (min-width: 1600px) {
-  .container-fluid {
-    width: 1570px;
   }
 }
 </style>
