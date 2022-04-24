@@ -1,13 +1,13 @@
 <template>
   <div class="history-data">
     <div class="header">
-      <h3>วันที่เข้ารับการรักษา : {{ date }}</h3>
+      <h3>วันที่เข้ารับการรักษา : <label> {{ date }}</label></h3>
     </div>
     <div class="body">
-      <h4>เวลา : {{ time }}</h4>
-      <p>สถานที่ : {{ location }}</p>
-      <p>ชื่อแพทย์ : {{ docName }}</p>
-      <p>อาการ : {{ symptom }}</p>
+      <h4>เวลา : {{ time }}</h4> <hr>
+      <p>สถานที่ : {{ location }}</p> <hr>
+      <p>ชื่อแพทย์ : {{ docName }}</p> <hr>
+      <p>อาการ : {{ symptom }}</p> <hr>
       <a :href="docLink" target="_blank">ดูเอกสาร</a>
     </div>
   </div>
