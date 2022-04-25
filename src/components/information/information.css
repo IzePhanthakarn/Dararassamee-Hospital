@@ -163,7 +163,22 @@
     .container-fluid {
       width: 720px;
     }
+    .body-box{
+      padding-top: 20px;
+    }
+    .topic-bar{
+      grid-template-columns: 1fr 1fr 1fr 2fr 2fr 1fr;
+    }
+    .topic-bar button{
+      height: 40px;
+    }
     
+    .other-information{
+      padding: 10px;
+      column-gap: 10px;
+      row-gap: 20px;
+      margin-top: 10px;
+    }
   }
   
   /* Extra large devices (large desktops, 1200px and up) */
@@ -171,9 +186,45 @@
     .container-fluid {
       width: 670px;
     }
+    .other-information{
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
   @media (max-width: 670px) {
     .container-fluid {
       width: 100%;
     }
+    .topic-bar{
+      grid-template-columns: repeat(3,1fr);
+      row-gap: 1px;
+      padding: 0 10px;
+    }
+    .topic-bar .first-btn{
+      border-radius: 20px 0 0 0;
+    }
+    .topic-bar .third-btn{
+      border-radius: 0 20px 0 0;
+      border: none;
+    }
+    .topic-bar .fourth-btn{
+      border-radius: 0 0 0 20px;
+    }
+    .topic-bar .last-btn{
+      border-radius: 0 0 20px 0;
+    }
+    .first-news{
+      margin-top: 25px;
+    }
+    .information-title{
+      margin-left: 10px;
+    }
+    .searchbox-bg{
+      margin-right: 10px;
+    }
+  }
+  @media (max-width: 510px){
+    .topic-bar button{
+      font-size: 16px;
+    }
+    
   }

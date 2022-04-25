@@ -1,10 +1,9 @@
 <template>
   <div class="new-information">
     <div class="left-column">
-      <img
-        :src="picture"
-        alt=""
-      />
+        <div class="first-img">
+      <img :src="picture"/>
+        </div>
       
     </div>
     <div class="right-column">
@@ -24,6 +23,9 @@ export default {
 </script>
 
 <style scoped>
+.container-fluid{
+    width: 1570px;
+}
 .new-information {
   width: 100%;
   height: 400px;
@@ -66,4 +68,70 @@ export default {
 .right-column p a{
     color: #80073c;
 }
+@media (max-width: 1600px) {
+    .container-fluid {
+      width: 1320px;
+    }
+    .other-information{
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  /* Medium devices (tablets, 768px and up) */
+  @media (max-width: 1400px) {
+    .container-fluid {
+      width: 1140px;
+    }
+  }
+  @media (max-width: 1200px) {
+    .container-fluid {
+      width: 960px;
+    }
+    .left-column img{
+        width: 500px;
+        height: auto;
+    }
+  }
+  /* Large devices (desktops, 992px and up) */
+  @media (max-width: 992px) {
+    .container-fluid {
+      width: 720px;
+    }
+    .new-information{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .left-column,
+    .right-column{
+        width: 100%;
+        margin: 0;
+    }
+    .left-column{
+        margin-top: -40px;
+    }
+    
+  }
+  
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (max-width: 768px) {
+    .container-fluid {
+      width: 670px;
+    }
+  }
+  @media (max-width: 670px) {
+    .container-fluid {
+      width: 100%;
+    }
+    .right-column{
+        padding: 0 20px;
+    }
+  }
+  @media (max-width: 510px){
+      .left-column img{
+      width: 350px;
+    }
+  }
 </style>
