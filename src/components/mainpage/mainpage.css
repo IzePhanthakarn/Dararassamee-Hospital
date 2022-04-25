@@ -1,158 +1,382 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  /* background-image: url("/public/dara-hospital.jpg"); */
+  /* background-size: cover; */
+  /* background-position: center; */
+  /* background-repeat: repeat; */
+  /* height: 100vh; */
+  /* padding: 50px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+.container-fluid {
+  width: 1570px;
+}
+
+.body {
+  background-image: url("/public/dara-hospital.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  height: 92.4vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.body-box {
+  background-color: lightgray;
+  height: 70vh;
+  /* width: 80%; */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 30px;
+  margin: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-column {
+  width: 70%;
+  height: 100%;
+  /* padding: 20px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-column img {
+  width: 1000px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.second-column {
+  width: 30%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 50px;
+}
+.status {
+  width: 400px;
+  height: 80px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 27px;
+}
+.normal-status {
+  background: lightgreen;
+  border: solid 2px green;
+}
+.warning-status {
+  background: rgb(253, 253, 201);
+  border: solid 2px orange;
+}
+.danger-status {
+  background: lightpink;
+  border: solid 2px rgb(168, 0, 0);
+}
+.obtions {
+  width: 400px;
+  height: 300px;
+  /* background: #8954; */
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.info-list {
+  width: 100%;
+  height: 100%;
+  background-color: #80073c;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.info-list button {
+  width: 70%;
+  height: 65px;
+  border-radius: 20px;
+  border: none;
+  font-size: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all 0.5s;
+}
+.appointment {
+  width: 400px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.appointment button {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  border: 5px solid #80073c;
+  font-size: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all 0.5s;
+}
+
+.appointment button:hover,
+.info-list button:hover {
+  transform: scale(1.05);
+}
+
+.appointment button:active,
+.info-list button:active {
+  transform: scale(0.95);
+}
+.label-btn {
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+@media (max-width: 1600px) {
+  .container-fluid {
+    max-width: 1320px;
   }
-  
-  .main {
-    background-image: url("/public/dara-hospital.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
+  .first-column img {
+    width: 800px;
   }
-  .body {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .status,
+  .appointment button {
+    height: 80px;
+    font-size: 26px;
+  }
+}
+@media (max-width: 1400px) {
+  .container-fluid {
+    max-width: 1140px;
+  }
+  .first-column img {
+    width: 700px;
+  }
+  .obtions {
+    height: 250px;
+  }
+  .obtions,
+  .status,
+  .appointment {
+    width: 300px;
+  }
+  .status,
+  .appointment button {
+    height: 70px;
+    font-size: 26px;
+  }
+  .info-list button {
+    width: 80%;
+    height: 60px;
+  }
+  .label-btn {
+    height: 200px;
+  }
+}
+@media (max-width: 1200px) {
+  .container-fluid {
+    max-width: 960px;
   }
   .body-box {
-    background-color: lightgray;
-    height: 80%;
-    /* width: 80%; */
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding: 30px;
-    display: flex;
-  }
-  
-  .first-column {
-    width: 70%;
-    height: 100%;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .first-column img {
-    width: 100%;
-    height: auto;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-  
-  .second-column {
-    width: 30%;
-    height: 100%;
-    display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    height: 75vh;
+    /* padding: 5px; */
   }
-  
-  .obtions {
+  .first-column {
     width: 100%;
-    height: 50%;
-    /* background: #8954; */
-    background: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-bottom: 10px;
   }
-  
+  .first-column img {
+    width: 600px;
+  }
+  .second-column {
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-evenly;
+    margin-left: 0;
+  }
   .info-list {
-    width: 90%;
-    height: 100%;
-    background-color: #80073c;
-    border-radius: 20px;
+    height: 200px;
+  }
+  .info-list button {
+    height: 50px;
+    font-size: 20px;
+  }
+  .label-btn {
+    height: 200px;
+    width: 250px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-  
-  .info-list button {
-    width: 70%;
-    height: 75px;
-    border-radius: 20px;
-    border: none;
-    font-size: 25px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    transition: all .5s;
-  
   }
   .appointment {
-    width: 80%;
-    height: 15%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 250px;
   }
+  .status,
   .appointment button {
+    height: 60px;
+    border-radius: 15px;
     width: 100%;
+    font-size: 22px;
+  }
+}
+@media (max-width: 992px) {
+  .body{
+    height: 94vh;
+  }
+  .container-fluid {
+    max-width: 720px;
+  }
+  .body-box{
+    height: 70vh;
+  }
+  .second-column {
+    width: 100%;
+  }
+  .info-list,
+  .label-btn,
+  .appointment button {
+    width: 250px;
+  }
+  .info-list button{
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-fluid {
+    width: 670px;
+  }
+  .body-box{
+    padding: 0;
+  }
+  .first-column img {
+    width: 520px;
+  }
+ .info-list{
+   height: 270px;
+   width: 100%;
+ }
+  .label-btn,
+  .appointment button {
+    width: 230px;
+    /* height: 60px; */
+  }
+  .info-list button{
+    width: 90%;
+  }
+}
+@media (max-width: 670px) {
+  .container-fluid{
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .container-fluid {
+    width: 100%;
+  }
+  .body-box{
+    height: 75vh;
+  }
+  .first-column img {
+    width: 97%;
+  }
+  .second-column{
+    flex-direction: column;
+  }
+  .obtions{
+    height: 210px;
+  }
+  .obtions,
+  .info-list{
+    margin: 0;
+    width: 97%;
+  }
+  .label-btn{
+    justify-content: center;
+    height: 160px;
+  }
+  .label-btn,
+  .appointment,
+  .appointment button{
+    width: 100%;
+  }
+}
+@media (max-width: 420px){
+  .body{
+    height: 92.1vh;
+  }
+  .first-column{
+    margin-bottom: 0;
+  }
+  .obtions{
+    height: 160px;
+  }
+  .info-list{
     height: 100%;
-    border-radius: 30px;
-    border: 5px solid #80073c;
-    font-size: 25px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    transition: all .5s;
   }
-  
-  .appointment button:hover,
-  .info-list button:hover{
-      transform: scale(1.05);
+  .info-list button{
+    height: 40px;
   }
-  
-  .appointment button:active,
-  .info-list button:active{
-      transform: scale(.95);
+  .label-btn{
+    margin-top: 15px;
+    width: 97%;
   }
-  @media (min-width: 576px) { 
-  .container-fluid{
-    width: 100%;
+  .status,
+  .appointment button{
+    height: 50px;
   }
- }
-
- /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
-  .container-fluid{
-    width: 540px;
+}
+@media (max-width: 375px){
+  .body-box{
+    padding: 20px;
   }
- }
-@media (min-width: 768px) { 
-  .container-fluid{
-    width: 720px;
+  .second-column{
+    height: 260px;
+    margin-top: 20px;
   }
- }
- /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
-  .container-fluid{
-    width: 960px;
+  .info-list{
+    height: 140px;
   }
- }
-
- /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  .container-fluid{
-    width: 1140px;
+  .info-list button{
+    height: 35px;
   }
- }
- @media (min-width: 1400px) {
-  .container-fluid{
-    width: 1320px;
+  .label-btn{
+    height: 100px;
   }
- }
- @media (min-width: 1600px) {
-  .container-fluid{
-    width: 1570px;
+  .status,
+  .appointment button{
+    height: 40px;
+    font-size: 18px;
   }
- }
+  .appointment button{
+    border: solid 3px #80073c;
+  }
+}

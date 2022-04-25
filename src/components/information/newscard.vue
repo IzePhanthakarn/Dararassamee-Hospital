@@ -8,9 +8,9 @@
         <a :href="linkNews" target="_blank">{{topicNews}}</a>
       </h4>
       <p>
-        {{introNews}}
-      </p>
+        {{introNews.slice(0,100)}}
       <a :href="linkNews" target="_blank" class="readmore">read more</a>
+      </p>
     </div>
   </div>
 </template>

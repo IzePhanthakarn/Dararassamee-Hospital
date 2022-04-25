@@ -1,6 +1,6 @@
 <template>
-    <NewsCard 
-        v-for="(item,index) in newscards.slice(1)" 
+    <FirstNewsCard 
+        v-for="(item,index) in newscards.slice(0,1)" 
         
         :key="index"
         :picture="item.picture" 
@@ -11,10 +11,10 @@
 </template>
 
 <script>
-import NewsCard from "./newscard.vue";
+import FirstNewsCard from './firstnewscard.vue';
 export default {
   components: {
-    NewsCard,
+    FirstNewsCard
   },
   props:["newscards"]
 };
