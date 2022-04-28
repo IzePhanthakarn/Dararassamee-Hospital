@@ -44,7 +44,7 @@ export default defineComponent({
   },
 });
 </script>
-<style>
+<style scoped>
 .carousel__item {
   min-height: 500px;
   width: 90%;

@@ -21,4 +21,7 @@ name : "OptionSex",
 </script>
 
 <style scoped>
+select{
+  width: 50%;
+}
 </style>

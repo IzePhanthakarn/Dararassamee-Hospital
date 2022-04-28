@@ -41,10 +41,15 @@ export default {
 }
 .study-option{
   width: 50%;
+  height: 100%;
 }
 .study-input {
   display: flex;
   width: 50%;
+  height: 100%;
+}
+select{
+  height: 100%;
 }
 p {
   margin: 0;
@@ -53,7 +58,7 @@ p {
 }
 input {
   width: 60%;
-  height: 25px;
+  height: 100%;
   margin: 0;
 }
 </style>

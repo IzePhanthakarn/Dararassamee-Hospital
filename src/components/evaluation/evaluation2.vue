@@ -9,6 +9,7 @@
         <div class="topic-q5">
           <h1>แบบประเมินภาวะสุขภาพจิต</h1>
         </div>
+        <div class="box-evaluation">
         <div class="description-q5-part1">
           <Des2-1 />
         </div>
@@ -51,7 +52,7 @@
             </p>
             <Opbar2-1 class="row-q5-op" />
           </div>
-          <div class="row-q5">
+          <div class="row-q5" id="no-line">
             <p>คิดทำร้ายตนเอง หรือคิดว่าถ้าตายไปคงจะดี</p>
             <Opbar2-1 class="row-q5-op" />
           </div>
@@ -90,10 +91,11 @@
             <p>ได้พยายามฆ่าตัวตายโดยคาดหวัง/ตั้งใจที่จะให้ตาย</p>
             <Opbar2-2 class="row-q5-op" />
           </div>
-                <div class="row-q5">
+                <div class="row-q5" id="no-line">
             <p>ช่วงตลอดชีวิตที่ผ่านมา ท่านเคยพยายามฆ่าตัวตาย</p>
             <Opbar2-2 class="row-q5-op" />
           </div>
+        </div>
         </div>
       </div>
       <div class="confirm-button">

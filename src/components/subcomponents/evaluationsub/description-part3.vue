@@ -1,12 +1,8 @@
 <template>
   <div>
+      <p class="topic">ส่วนที่ 3 แบบคัดกรองโรคซึมเศร้า 2 คำถาม</p>
       <p>
-          Part 3 lorem ipsum dolor sit amet consectetur 
-          adipisicing elit. Unde est obcaecati
-           optio commodi suscipit earum error 
-           minus magni alias facere, repudiandae 
-           blanditiis, quasi ad repellat dolorem. 
-           Dolor beatae earum iure.
+          ในช่วง 2 สัปดาห์ที่ผ่านมารวมทั้งวันนี้ ท่านมีอาการเหล่านี้บ่อยแค่ไหน
       </p>
   </div>
 </template>
@@ -19,5 +15,11 @@ export default {
 </script>
 
 <style scoped>
-
+.topic{
+  font-weight: bold;
+  font-size: 22px;
+}
+p{
+  font-size: 20px;
+}
 </style>

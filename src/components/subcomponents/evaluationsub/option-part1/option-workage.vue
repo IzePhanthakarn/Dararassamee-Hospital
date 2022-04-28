@@ -22,4 +22,7 @@ name : "OptionWorkage",
 </script>
 
 <style scoped>
+select{
+  width: 50%;
+}
 </style>

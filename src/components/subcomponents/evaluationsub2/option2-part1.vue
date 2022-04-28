@@ -21,4 +21,7 @@ name : "Option2Part1",
 </script>
 
 <style scoped>
+select{
+  width: 50%;
+}
 </style>
