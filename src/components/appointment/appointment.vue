@@ -6,7 +6,7 @@
     <div class="body-box container-fluid">
       <div class="appointment-title">
         <fa :icon="['far', 'calendar-check']" class="calendar-icon" />
-        <h1>วัดนัดพบแพทย์</h1>
+        <h1>วันนัดพบแพทย์</h1>
       </div>
       <div class="box-meet-date" v-for="(item,index) in meetdate" :key="index">
         <div class="meet-data">

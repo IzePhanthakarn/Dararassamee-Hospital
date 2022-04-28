@@ -4,7 +4,7 @@
       <div class="content-back-button-forgot">
         <button class="back-button-forgot">
           <fa :icon="['fas', 'arrow-left']" />
-          <span> ย้อนกลับ</span>
+          <span @click="$router.go(-1)"> ย้อนกลับ</span>
         </button>
       </div>
       <div class="logo-forgot">
