@@ -16,7 +16,8 @@
     "bootstrap-vue": "^2.22.0",
     "vue": "^3.2.33",
     "vue-basic-alert": "^1.1.0",
-    "vue-router": "^4.0.14"
+    "vue-router": "^4.0.14",
+    "vue3-carousel": "^0.1.38"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.1.0",
