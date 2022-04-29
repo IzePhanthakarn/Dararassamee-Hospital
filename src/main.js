@@ -21,6 +21,7 @@ import Option2Part2 from "./components/subcomponents/evaluationsub2/option2-part
 import OptionDeath from "./components/subcomponents/evaluationsub2/option-death.vue";
 import DesEva2First from "./components/subcomponents/evaluationsub2/description2-part1.vue";
 import DesEva2Sec from "./components/subcomponents/evaluationsub2/description2-part2.vue";
+import PhysicalData from "./components/history/data-history/physical-data.vue";
 library.add(fas);
 library.add(far);
 library.add(fab);
@@ -41,6 +42,7 @@ app.component("Opbar2-2",Option2Part2);
 app.component("Opbar-Death",OptionDeath);
 app.component("Des2-1",DesEva2First);
 app.component("Des2-2",DesEva2Sec);
+app.component("PhyData",PhysicalData);
 
 app.use(router);
 

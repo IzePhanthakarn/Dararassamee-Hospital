@@ -9,7 +9,25 @@
         <h1>ประวัติการรักษา</h1>
       </div>
       <div class="history-area">
-        <Listhistory :historycards="historycards" />
+        <div class="button-area">
+          <div class="box-showphy">
+            <button class="button-select" @click="showPhysical">
+              ประวัติสุขภาพกาย
+            </button>
+          </div>
+          <div class="box-showment">
+            <button class="button-select" @click="showMentally">
+              ประวัติสุขภาพจิต
+            </button>
+          </div>
+        </div>
+        <div v-show="showPhy">
+          <!-- <PhyData :historycards="historycards" /> -->
+          <h1>Phy</h1>
+        </div>
+        <div v-show="showMent">
+          <h1>dsadasads</h1>
+        </div>
       </div>
     </div>
   </body>
@@ -17,42 +35,53 @@
 
 <script>
 import Navbar from "../mainpage/navbar.vue";
-import Listhistory from './listhisory.vue';
 
 export default {
   components: {
     Navbar,
-    Listhistory,
   },
-  data(){
-    return{
-      historycards:[
+  data() {
+    return {
+      showPhy: false,
+      showMent: false,
+      historycards: [
         {
-          date:"20 มกราคม 2565",
+          date: "20 มกราคม 2565",
           time: "10.30 น.",
-          location:"โรงพยาบาลดารารัศมี จังหวัดเชียงใหม่",
+          location: "โรงพยาบาลดารารัศมี จังหวัดเชียงใหม่",
           docName: "นายแพทย์พันธกานต์ คุ้มภัย",
-          symptom:"โรคกระดูกพรุน",
-          docLink: "#"
+          symptom: "โรคกระดูกพรุน",
+          docLink: "#",
         },
         {
-          date:"13 มกราคม 2565",
+          date: "13 มกราคม 2565",
           time: "11.00 น.",
-          location:"โรงพยาบาลสามชุก จังหวัดสุพรรณบุรี",
+          location: "โรงพยาบาลสามชุก จังหวัดสุพรรณบุรี",
           docName: "นายแพทย์พันธกานต์ คุ้มภัย",
-          symptom:"โรคกระดูกพรุน",
-          docLink: "#"
+          symptom: "โรคกระดูกพรุน",
+          docLink: "#",
         },
         {
-          date:"13 ธันวาคม 2565",
+          date: "13 ธันวาคม 2565",
           time: "11.00 น.",
           docName: "นายแพทย์พันธกานต์ คุ้มภัย",
-          symptom:"ปวดหลัง",
-          docLink: "#"
+          symptom: "ปวดหลัง",
+          docLink: "#",
         },
-      ]
-    }
-  }
+      ],
+    };
+  },
+  methods: {
+    showPhysical() {
+      console.log(this.showPhy);
+      this.showPhy = true;
+      this.showMent = false;
+    },
+    showMentally() {
+      this.showMent = true;
+      this.showPhy = false;
+    },
+  },
 };
 </script>
 
