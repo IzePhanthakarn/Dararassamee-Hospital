@@ -6,11 +6,16 @@ import InformationView from "../views/InformationView.vue";
 import ContactView from "../views/ContactView.vue";
 import ForgotView from "../views/ForgotView.vue";
 import ForgotFolloView from "../views/ForgotFollowView.vue";
-import ProfileView from "../views/ProfileView.vue"
-import HistoryView from "../views/HistoryView.vue"
-import EvaluationView from "../views/EvaluationView.vue"
-import AppointmentView from "../views/AppointmentView.vue"
+import ProfileView from "../views/ProfileView.vue";
+import HistoryView from "../views/HistoryView.vue";
+import EvaluationView from "../views/EvaluationView.vue";
+import AppointmentView from "../views/AppointmentView.vue";
 import Evaluation2View from "../views/Evaluation2View.vue";
+import SelectEvaluationView from "../views/SelectEvaluationView.vue";
+import AdminHistoryView from "../views/AdminView/AdminHistoryView.vue";
+import AdminHomeView from "../views/AdminView/AdminHomeView.vue";
+import AdminInformationView from "../views/AdminView/AdminInformationView.vue";
+import AdminUserView from "../views/AdminView/AdminUserView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -71,10 +76,35 @@ const router = createRouter({
       component: ProfileView,
     },
     {
-      path : "/evaluation2",
-      name : "evaluation2",
-      component : Evaluation2View
-    }
+      path: "/evaluation2",
+      name: "evaluation2",
+      component: Evaluation2View,
+    },
+    {
+      path: "/select-evaluation",
+      name: "select-evaluation",
+      component: SelectEvaluationView,
+    },
+    {
+      path: "/admin-history",
+      name: "admin-history",
+      component: AdminHistoryView,
+    },
+    {
+      path: "/admin-user",
+      name: "admin-user",
+      component: AdminUserView,
+    },
+    {
+      path: "/admin-information",
+      name: "admin-information",
+      component: AdminInformationView,
+    },
+    {
+      path: "/admin-home",
+      name: "admin-home",
+      component: AdminHomeView,
+    },
   ],
 });
 
