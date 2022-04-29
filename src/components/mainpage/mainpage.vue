@@ -56,7 +56,7 @@ export default {
       return this.$router.push("/information");
     },
     goevaluation() {
-      return this.$router.push("/evaluation");
+      return this.$router.push("/select-evaluation");
     },
     goappointment() {
       return this.$router.push("/appointment");
