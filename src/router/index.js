@@ -8,9 +8,10 @@ import ForgotView from "../views/ForgotView.vue";
 import ForgotFolloView from "../views/ForgotFollowView.vue";
 import ProfileView from "../views/ProfileView.vue";
 import HistoryView from "../views/HistoryView.vue";
-import EvaluationView from "../views/EvaluationView.vue";
 import AppointmentView from "../views/AppointmentView.vue";
-import Evaluation2View from "../views/Evaluation2View.vue";
+import EvaluationQ5View from "../views/EvaluationQ5View.vue";
+import EvaluationQ8View from "../views/EvaluationQ8View.vue";
+import EvaluationQ9View from "../views/EvaluationQ9View.vue";
 import SelectEvaluationView from "../views/SelectEvaluationView.vue";
 import AdminHistoryView from "../views/AdminView/AdminHistoryView.vue";
 import AdminHomeView from "../views/AdminView/AdminHomeView.vue";
@@ -36,9 +37,9 @@ const router = createRouter({
       component: AppointmentView,
     },
     {
-      path: "/evaluation",
-      name: "evaluation",
-      component: EvaluationView,
+      path: "/evaluationQ5",
+      name: "evaluationQ5",
+      component: EvaluationQ5View,
     },
     {
       path: "/mainpage",
@@ -76,9 +77,14 @@ const router = createRouter({
       component: ProfileView,
     },
     {
-      path: "/evaluation2",
-      name: "evaluation2",
-      component: Evaluation2View,
+      path: "/evaluationQ8",
+      name: "evaluationQ8",
+      component: EvaluationQ8View,
+    },
+    {
+      path: "/evaluationQ9",
+      name: "evaluationQ9",
+      component: EvaluationQ9View,
     },
     {
       path: "/select-evaluation",
