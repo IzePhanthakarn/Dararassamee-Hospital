@@ -3,10 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-#no-line{
+#no-line {
   border-bottom: none;
 }
-p{
+p {
   font-size: 20px;
 }
 .container-fluid {
@@ -55,7 +55,7 @@ p{
   border: solid 2px #80073c;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.topic-q5 {
+.topic-q9 {
   display: flex;
   justify-content: center;
   padding: 10px;
@@ -64,38 +64,26 @@ p{
   border-top-right-radius: 26px;
   background-color: #80073c;
 }
-.topic-q5 h1 {
+.topic-q9 h1 {
   margin: 0;
   padding: 0;
   color: #fff;
 }
-.box-evaluation{
+.box-evaluation {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 30px;
 }
-.description-q5-part1 {
+.description-q9 {
   margin: 10px 0 0 0;
   width: 100%;
   display: flex;
   justify-content: flex-start;
 }
-.description-q5-part2 {
-  margin: 10px 0 0 0;
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-}
-.description-q5-part3 {
-  margin: 10px 0 0 0;
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  border-radius: 10px;
-}
-.evaluation-q5-part1 {
+
+.evaluation-q9 {
   margin: 5px;
   padding: 5px;
   display: flex;
@@ -103,37 +91,22 @@ p{
   background-color: #fff;
   width: 95%;
   border-radius: 10px;
+  border: solid 2px #80073c;
 }
-.evaluation-q5-part2 {
-  margin: 5px;
-  padding: 5px;
-  display: flex;
-  flex-direction: column;
-  background-color: #fff;
-  width: 95%;
-  border-radius: 10px;
-}
-.evaluation-q5-part3 {
-  margin: 5px;
-  padding: 5px;
-  display: flex;
-  flex-direction: column;
-  background-color: #fff;
-  width: 95%;
-  border-radius: 10px;
-}
-.row-q5 {
+
+.row-q9 {
   display: flex;
   align-items: center;
   padding: 0 0 0 10px;
-  height: 40px;
+  height: auto;
   width: 100%;
   border-bottom: 2px solid;
 }
-.row-q5 p {
+.row-q9 p {
   width: 65%;
+  margin: 8px 0;
 }
-.row-q5-op {
+.row-q9-op {
   width: 35%;
   display: flex;
   justify-content: flex-end;

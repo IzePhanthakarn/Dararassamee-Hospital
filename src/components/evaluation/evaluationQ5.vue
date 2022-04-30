@@ -4,7 +4,7 @@
   </header>
   <body>
     <div class="body-box container-fluid">
-      <div class="profile-title">
+      <div class="eva-title">
         <fa :icon="['fas', 'file-signature']" class="user-icon" />
         <h1>แบบประเมิน</h1>
       </div>
@@ -100,12 +100,12 @@ export default {
   methods: {
     changepassword() {
       alert("แบบสอบถามหน้าถัดไป");
-      return this.$router.push("/evaluation2");
+      return this.$router.push("/evaluationQ9");
     },
   },
 };
 </script>
 
 <style scoped>
-@import url("./evaluation.css");
+@import url("./evaluationQ5.css");
 </style>

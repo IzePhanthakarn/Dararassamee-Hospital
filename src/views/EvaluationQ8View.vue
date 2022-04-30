@@ -3,16 +3,16 @@
     <header>
         <Nav />
     </header>
-    <Evaluation2 />
+    <EvaluationQ8 />
   </div>
 </template>
 
 <script>
-import Evaluation2 from "../components/evaluation/evaluation2.vue";
+import EvaluationQ8 from "../components/evaluation/evaluationQ8.vue";
 export default {
-  name: "EvaluationView",
+  name: "EvaluationViewQ8",
   components: {
-    Evaluation2,
+    EvaluationQ8,
   },
 };
 </script>
