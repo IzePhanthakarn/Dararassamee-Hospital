@@ -20,6 +20,7 @@ export default {
   font-weight: bold;
   font-size: 22px;
 }
+
 p{
   font-size: 20px;
 }

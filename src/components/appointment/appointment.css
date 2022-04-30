@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+.container-fluid{
+  width: 1570px;
+}
 .body-box {
   display: flex;
   flex-direction: column;
