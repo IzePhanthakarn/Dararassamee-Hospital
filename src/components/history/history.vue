@@ -23,10 +23,10 @@
         </div>
         <div v-show="showPhy">
           <!-- <PhyData :historycards="historycards" /> -->
-          <h1>Phy</h1>
+          <h1>PhySicals</h1>
         </div>
         <div v-show="showMent">
-          <h1>dsadasads</h1>
+          <h1>Mentally</h1>
         </div>
       </div>
     </div>
