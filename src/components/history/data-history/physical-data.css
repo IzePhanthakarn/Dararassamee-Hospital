@@ -1,44 +1,119 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+p {
+  font-size: 25px;
+}
+.physical-area {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(212, 212, 212);
+  padding: 20px;
+  border-radius: 15px 15px 0 0;
+}
+.topic-area {
+  width: 100%;
+  border-bottom: solid 2px;
+  display: flex;
+  justify-content: center;
+}
+.detail-area {
+  border-radius: 15px;
+  margin: 10px 0 0 0;
+  padding: 30px;
+  background-color: rgb(236, 236, 236);
+  width: 100%;
+  height: 100%;
+}
+.detail-data-topic {
+  background-color: aliceblue;
+  padding: 10px 20px;
+  display: flex;
+  height: auto;
+  width: 100%;
+}
+.detail-data {
+  padding: 10px 20px;
+  display: flex;
+  height: auto;
+  width: 100%;
+}
+.detail-data:hover{
+  background-color: rgb(173, 173, 173);
+}
+.disease {
+  display: flex;
+  justify-content: flex-start;
+  width: 50%;
+}
+.meetdate {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+}
+.xray-area {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(212, 212, 212);
+  padding: 20px;
+  border-radius: 0 0 15px 15px;
+}
+.status {
+  margin: 10px 0 0 0;
+  width: 400px;
+  height: 80px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 27px;
+  background: lightgreen;
+  border: solid 2px green;
+}
+
+@media (max-width: 1600px) {
+  .container-fluid {
+    width: 1320px;
   }
-  
-  @media (max-width: 1600px) {
-    .container-fluid {
-      width: 1320px;
-    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 1400px) {
+  .container-fluid {
+    width: 1140px;
   }
-  
-  /* Medium devices (tablets, 768px and up) */
-  @media (max-width: 1400px) {
-    .container-fluid {
-      width: 1140px;
-    }
+}
+@media (max-width: 1200px) {
+  .container-fluid {
+    width: 960px;
   }
-  @media (max-width: 1200px) {
-    .container-fluid {
-      width: 960px;
-    }
+}
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+  .container-fluid {
+    width: 720px;
   }
-  /* Large devices (desktops, 992px and up) */
-  @media (max-width: 992px) {
-    .container-fluid {
-      width: 720px;
-    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (max-width: 768px) {
+  .container-fluid {
+    width: 670px;
   }
-  
-  /* Extra large devices (large desktops, 1200px and up) */
-  @media (max-width: 768px) {
-    .container-fluid {
-      width: 670px;
-    }
-    .body-box{
-      padding: 30px 0;
-    }
+  .body-box {
+    padding: 30px 0;
   }
-  @media (max-width: 670px) {
-    .container-fluid {
-      width: 100%;
-    }
+}
+@media (max-width: 670px) {
+  .container-fluid {
+    width: 100%;
   }
+}

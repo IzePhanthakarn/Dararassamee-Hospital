@@ -22,6 +22,7 @@ import OptionDeath from "./components/subcomponents/evaluationsub2/option-death.
 import DesEva2First from "./components/subcomponents/evaluationsub2/description2-part1.vue";
 import DesEva2Sec from "./components/subcomponents/evaluationsub2/description2-part2.vue";
 import PhysicalData from "./components/history/data-history/physical-data.vue";
+import MentallyData from "./components/history/data-history/mentally-data.vue";
 library.add(fas);
 library.add(far);
 library.add(fab);
@@ -43,6 +44,7 @@ app.component("Opbar-Death",OptionDeath);
 app.component("Des2-1",DesEva2First);
 app.component("Des2-2",DesEva2Sec);
 app.component("PhyData",PhysicalData);
+app.component("MentData",MentallyData);
 
 app.use(router);
 

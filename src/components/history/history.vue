@@ -5,28 +5,27 @@
   <body>
     <div class="body-box container-fluid">
       <div class="history-title">
-        <fa :icon="['fas', 'book-medical']" class="history-icon" />
+        <fa :icon="['fas','book-medical']" class="history-icon" />
         <h1>ประวัติการรักษา</h1>
       </div>
       <div class="history-area">
         <div class="button-area">
           <div class="box-showphy">
-            <button class="button-select" @click="showPhysical">
-              ประวัติสุขภาพกาย
+            <button :class="{'button-select-active': showPhy}" class="button-select" @click="showPhysical">
+              <p>ประวัติสุขภาพกาย</p>
             </button>
           </div>
           <div class="box-showment">
-            <button class="button-select" @click="showMentally">
-              ประวัติสุขภาพจิต
+            <button :class="{'button-select-active': showMent}" class="button-select" @click="showMentally">
+              <p>ประวัติสุขภาพจิต</p>
             </button>
           </div>
         </div>
-        <div v-show="showPhy">
-          <!-- <PhyData :historycards="historycards" /> -->
-          <h1>PhySicals</h1>
+        <div class="box-data" v-show="showPhy">
+          <PhyData />
         </div>
-        <div v-show="showMent">
-          <h1>Mentally</h1>
+        <div class="box-data" v-show="showMent">
+          <MentData />
         </div>
       </div>
     </div>
@@ -42,7 +41,7 @@ export default {
   },
   data() {
     return {
-      showPhy: false,
+      showPhy: true,
       showMent: false,
       historycards: [
         {
@@ -70,6 +69,9 @@ export default {
         },
       ],
     };
+  },
+  mounted(){
+    // this.showPhysical();
   },
   methods: {
     showPhysical() {
