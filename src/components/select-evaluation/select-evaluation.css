@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.body-box {
+  width: 100%;
+  height: 50vh;
+  background: rgba(125, 6, 51, 0.35);
+  border: solid 2px #80073c;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 30px;
+  display: flex;
+  margin-top: 12vh;
+  justify-content: center;
+  align-items: center;
+}
+.button-area {
+  padding: 40px;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.selector-title {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.selector-icon {
+  font-size: 50px;
+  margin-right: 15px;
+  color: #80073c;
+}
+.button-content {
+  /* background: #000; */
+  width: 100%;
+  height: 100%;
+}
+.button-content button {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  font-size: 20px;
+  background-color: #fff;
+  border: solid 2px #80073c;
+  transition: all 0.3s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.button-content button:hover {
+  transform: scale(0.95);
+}
+.button-content button:active {
+  transform: scale(1);
+}
+@media (max-width: 1600px) {
+  .container-fluid {
+    max-width: 1320px;
+  }
+}
+@media (max-width: 1400px) {
+  .container-fluid {
+    max-width: 1140px;
+  }
+  .button-area {
+    gap: 30px;
+    padding: 30px;
+  }
+}
+@media (max-width: 1200px) {
+  .container-fluid {
+    max-width: 960px;
+  }
+  .body-box {
+    margin-top: 40px;
+  }
+  .button-area {
+    gap: 30px;
+    padding: 30px;
+  }
+  .button-area button{
+    font-size: 18px;
+  }
+}
+@media (max-width: 992px) {
+  .container-fluid {
+    max-width: 720px;
+  }
+  .button-area{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .body-box{
+    height: 70vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-fluid {
+    width: 670px;
+  }
+}
+@media (max-width: 670px) {
+  .container-fluid {
+    width: 100%;
+  }
+  .button-area{
+    padding: 30px 0;
+  }
+  .selector-title{
+    margin: 30px 0;
+  }
+  .button-area button{
+    font-size: 22px;
+  }
+}
