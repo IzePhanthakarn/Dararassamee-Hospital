@@ -111,6 +111,11 @@ const router = createRouter({
       name: "admin-home",
       component: AdminHomeView,
     },
+    {
+      path: "/admin-name",
+      name: "รายละเอียดผู้ป่วย",
+      component: () => import("../views/AdminView/AdminDetailsView.vue"),
+    }
   ],
 });
 

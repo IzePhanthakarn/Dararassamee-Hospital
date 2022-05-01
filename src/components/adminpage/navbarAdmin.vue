@@ -51,7 +51,7 @@
 
 <script>
 export default {
-  name: "Navbar",
+  name: "AdminNavbar",
   methods: {
     logout() {
       return this.$router.push("/");

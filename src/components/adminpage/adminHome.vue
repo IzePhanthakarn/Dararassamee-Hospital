@@ -1,5 +1,5 @@
 <template>
-  <navbarAdmin />
+  <Ad-Nav />
   <div class="mainpage">
     <div class="ccontainer">
       <div class="data-content">
@@ -24,15 +24,12 @@
             <th>สุขภาพจิต</th>
             <th>รายละเอียด</th>
           </tr>
-          <tr v-for="(item,index) in patient" :key="index">
-            <td>{{index+1}}</td>
-            <td>{{item.fname}} {{item.lname}}</td>
-            <td>{{item.date}}</td>
-            <td v-if="item.status ==='ปกติ'" class="normal-status">{{item.status}}</td>
-            <td v-if="item.status ==='สุ่มเสี่ยง'" class="warning-status">{{item.status}}</td>
-            <td v-if="item.status ==='อันตราย'" class="danger-status">{{item.status}}</td>
-            <td><button>ดูรายละเอียด</button></td>
-          </tr>
+            <PerInfo v-for="(item,index) in patientdata" :key="index"
+            :patient="item"
+            :id="index + 1"
+            :name="item.pname + ' ' + item.fname + ' ' + item.lname"
+            :date="item.birthday"
+            :status="item.status"/>
         </table>
       </div>
     </div>
@@ -40,18 +37,11 @@
 </template>
 
 <script>
-import navbarAdmin from "./navbarAdmin.vue";
+import patientdata from '../../json/patient.json'
 export default {
-  components: {
-    navbarAdmin,
-  },
   data() {
     return{
-      patient:[
-        {fname:"พันธกานต์",lname:"คุ้มภัย",date:"14 เมษายน 2565",status:"ปกติ"},
-        {fname:"พิชยะ",lname:"คชารัตน์ไพศาล",date:"30 เมษายน 2565",status:"อันตราย"},
-        {fname:"ธนภัทร",lname:"พรหมคง",date:"1 เมษายน 2565",status:"สุ่มเสี่ยง"},
-      ]
+      patientdata,
     }
   }
 };
@@ -98,22 +88,8 @@ table {
 th{
   border: solid 2px black;
 }
-th,td{
+th{
   padding: 5px;
 }
-td{
-  border: solid 1px #000;
-}
-td.normal-status{
-  border: solid 2px green;
-  background: lightgreen;
-}
-td.warning-status{
-  border: solid 2px orange;
-  background: lightyellow;
-}
-td.danger-status{
-  border: solid 2px red;
-  background: lightpink;
-}
+
 </style>
