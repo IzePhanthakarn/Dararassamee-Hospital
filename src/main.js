@@ -27,7 +27,7 @@ import DesEvaQ8 from "./components/subcomponents/evaluationsubQ8/description.vue
 import PhysicalData from "./components/history/data-history/physical-data.vue";
 import MentallyData from "./components/history/data-history/mentally-data.vue";
 import UserInfo from "./components/adminpage/adminData/user-info.vue";
-
+import NewsInfo from "./components/adminpage/adminData/news-info.vue";
 library.add(fas);
 library.add(far);
 library.add(fab);
@@ -54,6 +54,7 @@ app.component("DesQ8",DesEvaQ8);
 app.component("PhyData",PhysicalData);
 app.component("MentData",MentallyData);
 app.component("UserInfo",UserInfo);
+app.component("NewsInfo",NewsInfo);
 
 app.use(router);
 

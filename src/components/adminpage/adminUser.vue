@@ -8,7 +8,7 @@
         <div class="info-box">
           <form action="" class="search-box">
             <input type="search" name="" id="" />
-            <input type="submit" value="ค้นหา" class="submit-button">
+            <input type="submit" value="ค้นหา" class="submit-button" />
           </form>
           <select name="" id="">
             <option value="">จัดเรียงตาม</option>
@@ -18,34 +18,41 @@
             <option value="">สุขภาพจิตอันตราย-ปกติ</option>
           </select>
         </div>
-        <table>
-          <tr>
-            <th>ลำดับ</th>
-            <th>ชื่อ</th>
-            <th>อัพเดตล่าสุด</th>
-            <th>สุขภาพจิต</th>
-            <th>รายละเอียด</th>
-          </tr>
-            <UserInfo v-for="(item,index) in patientdata" :key="index"
-            :patient="item"
-            :id="index + 1"
-            :name="item.pname + ' ' + item.fname + ' ' + item.lname"
-            :date="item.birthday"
-            :status="item.status"/>
-        </table>
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>ลำดับ</th>
+                <th>ชื่อ</th>
+                <th>อัพเดตล่าสุด</th>
+                <th>สุขภาพจิต</th>
+                <th>รายละเอียด</th>
+              </tr>
+            </thead>
+            <UserInfo
+              v-for="(item, index) in patientdata"
+              :key="index"
+              :patient="item"
+              :id="index + 1"
+              :name="item.pname + ' ' + item.fname + ' ' + item.lname"
+              :date="item.birthday"
+              :status="item.status"
+            />
+          </table>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import patientdata from '../../json/patient.json'
+import patientdata from "../../json/patient.json";
 export default {
   data() {
-    return{
+    return {
       patientdata,
-    }
-  }
+    };
+  },
 };
 </script>
 
@@ -72,6 +79,7 @@ export default {
   height: 80%;
   background: rgba(125, 6, 51, 0.35);
   border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .data-content {
   padding: 20px;
@@ -80,7 +88,7 @@ export default {
   display: flex;
   justify-content: end;
 }
-input.submit-button{
+input.submit-button {
   margin-left: 10px;
 }
 select {
@@ -89,16 +97,28 @@ select {
 }
 table {
   width: 100%;
-  border: solid 1px black;
   text-align: center;
   background: #fff;
-  margin-top: 20px;
 }
-th{
+thead th {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: rgb(223, 223, 223);
+  border: solid 1px #000;
+}
+
+th {
   border: solid 2px black;
-}
-th{
   padding: 5px;
+}
+.table-container {
+  position: relative;
+  max-height: 570px;
+  overflow-y: scroll;
+  margin-top: 20px;
+  border: solid 1px black;
 }
 
 </style>

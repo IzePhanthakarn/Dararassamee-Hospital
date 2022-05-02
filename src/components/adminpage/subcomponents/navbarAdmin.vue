@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-box navbar-expand-lg navbar-dark static-top">
     <div class="container-fluid">
-      <router-link class="navbar-brand" to="/mainpage">
+      <router-link class="navbar-brand" to="/admin-user">
         <strong>Happy Cop.</strong>
       </router-link>
       <div class="hnavbar">
@@ -19,50 +19,56 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item1 mx-4">
-              <router-link class="nav-link" to="/mainpage"
+              <router-link class="nav-link" to="/admin-user"
                 >รายชื่อผู้ป่วย</router-link
               >
             </li>
             <li class="nav-item1 mx-4">
-              <router-link class="nav-link" to="/history"
+              <router-link class="nav-link" to="/admin-evaluation"
                 >แบบประเมิน</router-link
               >
             </li>
             <li class="nav-item1 ms-4">
-              <router-link class="nav-link" to="/contact"
+              <router-link class="nav-link" to="/admin-news"
                 >ข่าวประชาสัมพันธ์</router-link
               >
             </li>
             <li class="nav-item1 ms-4">
-              <router-link class="nav-link" to="/contact"
+              <router-link class="nav-link" to="/admin-elearn"
                 >ศูนย์ความรู้</router-link
               >
+            </li>
+            <li class="nav-item ms-4 logout-bg">
+              <button @click="logout" class="logout-btn">ออกจากระบบ</button>
             </li>
           </ul>
         </div>
       </div>
-      <ul class="navbar-nav ms-auto snavbar">
-        <li class="nav-item ms-4 logout-bg">
-          <button @click="logout" class="logout-btn">ออกจากระบบ</button>
-        </li>
-      </ul>
     </div>
   </nav>
   <div class="body">
     <div class="sidebar">
       <div class="sidebar-list">
-        <p @click="gotoAdminUser" :class="{ 'button-select-active': User }">
-          รายชื่อผู้ป่วย
-        </p>
-        <p @click="gotoAdminEva" :class="{ 'button-select-active': Eva }">
-          แบบประเมิน
-        </p>
-        <p @click="gotoAdminNews" :class="{ 'button-select-active': News }">
-          ข่าวประชาสัมพันธ์
-        </p>
-        <p @click="gotoAdminElearn" :class="{ 'button-select-active': Elearn }">
-          ศูนย์ความรู้
-        </p>
+        <div class="menu-list">
+          <p @click="gotoAdminUser" :class="{ 'button-select-active': User }">
+            รายชื่อผู้ป่วย
+          </p>
+          <p @click="gotoAdminEva" :class="{ 'button-select-active': Eva }">
+            แบบประเมิน
+          </p>
+          <p @click="gotoAdminNews" :class="{ 'button-select-active': News }">
+            ข่าวประชาสัมพันธ์
+          </p>
+          <p
+            @click="gotoAdminElearn"
+            :class="{ 'button-select-active': Elearn }"
+          >
+            ศูนย์ความรู้
+          </p>
+        </div>
+        <div class="sidebar-btn">
+          <button @click="logout" class="logout-btn">ออกจากระบบ</button>
+        </div>
       </div>
     </div>
   </div>
@@ -103,18 +109,18 @@ export default {
       this.News = true;
       this.showNews();
     },
-    gotoAdminElearn(){
+    gotoAdminElearn() {
       this.$router.push("/admin-elearn");
     },
-    showUser(){
-        this.$router.push("/admin-user");
+    showUser() {
+      this.$router.push("/admin-user");
     },
-    showEva(){
+    showEva() {
       this.$router.push("/admin-evaluation");
     },
-    showNews(){
+    showNews() {
       this.$router.push("/admin-news");
-    }
+    },
   },
 };
 </script>
@@ -167,18 +173,22 @@ button.logout-btn:active {
   background: #cebbc3;
   border: solid 2px #80073c;
   position: absolute;
-  padding-top: 70px;
+  padding-top: 69px;
   top: 0;
   left: 0;
   z-index: 1;
 }
 .sidebar-list {
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
-.sidebar-list p {
+.menu-list {
+  width: 100%;
+}
+.menu-list p {
   padding: 10px;
   border-bottom: solid 2px #80073c;
   width: 100%;
@@ -187,15 +197,28 @@ button.logout-btn:active {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.3s;
 }
-.sidebar-list p:hover{
+.menu-list p:hover {
   cursor: pointer;
+  background-color: #80073c;
+  color: #fff;
+}
+.button-select-active {
   background-color: #2d9e87;
 }
-.button-select-active{
-   background-color: #2d9e87;
+.sidebar-btn{
+  width: 100%;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
 }
-
+.sidebar-btn button{
+  width: 90%;
+  height: 100%;
+}
 @media (max-width: 1600px) {
   .container-fluid {
     max-width: 1320px;
@@ -214,9 +237,6 @@ button.logout-btn:active {
 @media (max-width: 992px) {
   .container-fluid {
     max-width: 720px;
-  }
-  .snavbar {
-    display: none;
   }
   .hnavbar {
     display: contents;
