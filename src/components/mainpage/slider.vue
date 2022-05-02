@@ -34,12 +34,12 @@ export default defineComponent({
   data() {
     return {
       image: [
-        { img: "/public/Slide1.jpeg" },
+        { img: "/public/slide1.jpeg" },
         { img: "/public/slide2.jpeg" },
         { img: "/public/slide3.jpeg" },
+        { img: "/public/slide4.jpeg" },
         { img: "/public/slide5.jpeg" },
         { img: "/public/slide6.jpeg" },
-        { img: "/public/slide7.jpeg" },
       ],
     };
   },

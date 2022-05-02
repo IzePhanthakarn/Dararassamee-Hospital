@@ -1,0 +1,26 @@
+[
+  {
+    "pictureAddr": "/public/slide1.jpeg",
+    "pictureName": "slide1.jpeg"
+  },
+  {
+    "pictureAddr": "/public/slide2.jpeg",
+    "pictureName": "slide2.jpeg"
+  },
+  {
+    "pictureAddr": "/public/slide3.jpeg",
+    "pictureName": "slide3.jpeg"
+  },
+  {
+    "pictureAddr": "/public/slide4.jpeg",
+    "pictureName": "slide4.jpeg"
+  },
+  {
+    "pictureAddr": "/public/slide5.jpeg",
+    "pictureName": "slide5.jpeg"
+  },
+  {
+    "pictureAddr": "/public/slide6.jpeg",
+    "pictureName": "slide6.jpeg"
+  }
+]
