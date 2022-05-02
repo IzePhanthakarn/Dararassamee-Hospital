@@ -72,7 +72,7 @@
 export default {
   methods: {
     changepassword() {
-      return this.$router.push("/mainpage");
+      return this.$router.push("/evaluationQ8");
     },
   },
 };

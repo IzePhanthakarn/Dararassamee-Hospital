@@ -7,7 +7,8 @@ import { far } from "@fortawesome/free-regular-svg-icons";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import Navbar from "./components/mainpage/navbar.vue";
-import AdminNavbar from "./components/adminpage/navbarAdmin.vue";
+import AdminNavbar from "./components/adminpage/subcomponents/navbarAdmin.vue";
+import AdminTitleBar from "./components/adminpage/subcomponents/titlebarAdmin.vue"
 import OptionIncome from "./components/subcomponents/evaluationsubQ5/option-part1/option-income.vue";
 import OptionSex from "./components/subcomponents/evaluationsubQ5/option-part1/option-sex.vue";
 import OptionStudy from "./components/subcomponents/evaluationsubQ5/option-part1/option-study.vue";
@@ -24,7 +25,7 @@ import DesEvaQ9 from "./components/subcomponents/evaluationsubQ9/description.vue
 import DesEvaQ8 from "./components/subcomponents/evaluationsubQ8/description.vue";
 import PhysicalData from "./components/history/data-history/physical-data.vue";
 import MentallyData from "./components/history/data-history/mentally-data.vue";
-import PersonalInfo from "./components/adminpage/adminData/personal-info.vue";
+import UserInfo from "./components/adminpage/adminData/user-info.vue";
 library.add(fas);
 library.add(far);
 library.add(fab);
@@ -32,6 +33,7 @@ const app = createApp(App);
 app.component("fa", FontAwesomeIcon);
 app.component("Nav",Navbar);
 app.component("Ad-Nav",AdminNavbar);
+app.component("Ad-Title",AdminTitleBar);
 app.component("Opbar-income", OptionIncome);
 app.component("Opbar-sex", OptionSex);
 app.component("Opbar-study", OptionStudy);
@@ -48,8 +50,9 @@ app.component("DesQ9",DesEvaQ9);
 app.component("DesQ8",DesEvaQ8);
 app.component("PhyData",PhysicalData);
 app.component("MentData",MentallyData);
-app.component("PerInfo",PersonalInfo);
+app.component("UserInfo",UserInfo);
 
 app.use(router);
 
 app.mount("#app");
+

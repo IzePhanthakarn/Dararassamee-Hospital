@@ -1,5 +1,5 @@
 <template>
-  
+  <Ad-Nav/>
 </template>
 
 <script>
