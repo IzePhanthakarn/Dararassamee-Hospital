@@ -7,7 +7,7 @@
     <td v-if="status === 'สุ่มเสี่ยง'" class="warning-status">{{ status }}</td>
     <td v-if="status === 'อันตราย'" class="danger-status">{{ status }}</td>
     <td id="info">
-      <button @click="goToUserDetails(name)">รายละเอียด</button>
+      <button @click="goToUserDetails(name)">ดูรายละเอียด</button>
     </td>
   </tr>
 </template>
@@ -34,9 +34,10 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 td {
-  padding: 5px;
+  padding: 4px;
+  border: solid 1px #000;
 }
 td.normal-status {
   border: solid 2px green;

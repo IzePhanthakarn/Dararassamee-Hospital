@@ -1,5 +1,8 @@
 <template>
   <div>
+    <div>
+      <Ad-Nav />
+    </div>
     <AdminNews />
   </div>
 </template>
