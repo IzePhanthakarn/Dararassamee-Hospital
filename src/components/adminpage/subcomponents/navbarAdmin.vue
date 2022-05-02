@@ -33,6 +33,11 @@
                 >ข่าวประชาสัมพันธ์</router-link
               >
             </li>
+            <li class="nav-item1 ms-4">
+              <router-link class="nav-link" to="/contact"
+                >ศูนย์ความรู้</router-link
+              >
+            </li>
           </ul>
         </div>
       </div>
@@ -54,6 +59,9 @@
         </p>
         <p @click="gotoAdminNews" :class="{ 'button-select-active': News }">
           ข่าวประชาสัมพันธ์
+        </p>
+        <p @click="gotoAdminElearn" :class="{ 'button-select-active': Elearn }">
+          ศูนย์ความรู้
         </p>
       </div>
     </div>
@@ -95,11 +103,14 @@ export default {
       this.News = true;
       this.showNews();
     },
+    gotoAdminElearn(){
+      this.$router.push("/admin-elearn");
+    },
     showUser(){
         this.$router.push("/admin-user");
     },
     showEva(){
-      this.$router.push("/admin-history");
+      this.$router.push("/admin-evaluation");
     },
     showNews(){
       this.$router.push("/admin-news");

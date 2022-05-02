@@ -17,6 +17,7 @@ import AdminElearnView from "../views/AdminView/AdminElearnView.vue";
 import AdminNewsView from "../views/AdminView/AdminNewsView.vue";
 import AdminUserView from "../views/AdminView/AdminUserView.vue";
 import AdminDetailsView from "../views/AdminView/AdminDetailsView.vue";
+import AdminEvaluationView from "../views/AdminView/AdminEvaluationView.vue"
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -100,6 +101,11 @@ const router = createRouter({
       path: "/admin-user",
       name: "admin-user",
       component: AdminUserView,
+    },
+    {
+      path: "/admin-evaluation",
+      name: "admin-evaluation",
+      component: AdminEvaluationView,
     },
     {
       path: "/admin-news",

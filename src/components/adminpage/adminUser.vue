@@ -8,7 +8,7 @@
             <input type="submit" value="ค้นหา" class="submit-button">
           </form>
           <select name="" id="">
-            <option value="">จัดเรียงตามdd</option>
+            <option value="">จัดเรียงตาม</option>
             <option value="">เวลาเก่า-ใหม่</option>
             <option value="">เวลาใหม่-เก่า</option>
             <option value="">สุขภาพจิตปกติ-อันตราย</option>
