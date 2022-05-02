@@ -5,7 +5,7 @@
     </div>
     <div class="ccontainer">
       <div class="top-box">
-        <div class="box-button"><button>ประวัติผู้ป่วย</button></div>
+        <div @click="goToUserInformation" class="box-button"><button>ประวัติผู้ป่วย</button></div>
         <div class="box-button"><button>โรคปัจจุบัน</button></div>
         <div class="box-button"><button>ผลเอกซเรย์</button></div>
       </div>
@@ -23,6 +23,11 @@ export default {
   data() {
     return {};
   },
+  methods:{
+    goToUserInformation(){
+      return this.$router.push(`/user-details/${name}/information`);
+    }
+  }
 };
 </script>
 

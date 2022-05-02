@@ -1,0 +1,48 @@
+<template>
+  <div class="title-bar">
+    <div class="box-title">
+      <div class="icon">
+         <fa :icon="['fas', 'hospital-user']" class="user-icon" />
+      </div>
+      <b>{{ $route.name }}</b>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+}
+</script>
+
+<style scoped>
+.icon{
+  width: 15%;
+  height: 100%;
+}
+.user-icon{
+  font-size: 35px;
+}
+.title-bar {
+  padding: 10px;
+  color: aliceblue;
+  background-image: linear-gradient(to right, #80073c, #b30a53);
+  border-radius: 15px;
+  height: 50px;
+  width: 30%;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  
+}
+.box-title {
+  display: flex;
+  height: 100%;
+}
+.box-title b {
+  width: 100%;
+  height: 100%;
+  margin-left: 10px;
+  font-size: 25px;
+  text-align: center;
+}
+</style>
