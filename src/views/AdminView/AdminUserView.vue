@@ -1,5 +1,8 @@
 <template>
   <div>
+    <div>
+      <Ad-Nav />
+    </div>
     <AdminUser />
   </div>
 </template>

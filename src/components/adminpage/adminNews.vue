@@ -1,5 +1,5 @@
 <template>
-  <h1>adsadsddadaadasdsas</h1>
+  <Ad-Nav/>
 </template>
 
 <script>

@@ -19,13 +19,19 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item1 mx-4">
-              <router-link class="nav-link" to="/profile">ข้อมูลผู้ป่วย</router-link>
+              <router-link class="nav-link" to="/mainpage"
+                >รายชื่อผู้ป่วย</router-link
+              >
             </li>
             <li class="nav-item1 mx-4">
-              <router-link class="nav-link" to="/history">แบบประเมิน</router-link>
+              <router-link class="nav-link" to="/history"
+                >แบบประเมิน</router-link
+              >
             </li>
             <li class="nav-item1 ms-4">
-              <router-link class="nav-link" to="/contact">ข่าวประชาสัมพันธ์</router-link>
+              <router-link class="nav-link" to="/contact"
+                >ข่าวประชาสัมพันธ์</router-link
+              >
             </li>
           </ul>
         </div>
@@ -40,22 +46,64 @@
   <div class="body">
     <div class="sidebar">
       <div class="sidebar-list">
-        <p>ข้อมูลผู้ป่วย</p>
-        <p>แบบประเมิน</p>
-        <p>ข่าวประชาสัมพันธ์</p>
+        <p @click="gotoAdminUser" :class="{ 'button-select-active': User }">
+          รายชื่อผู้ป่วย
+        </p>
+        <p @click="gotoAdminEva" :class="{ 'button-select-active': Eva }">
+          แบบประเมิน
+        </p>
+        <p @click="gotoAdminNews" :class="{ 'button-select-active': News }">
+          ข่าวประชาสัมพันธ์
+        </p>
       </div>
     </div>
-    
   </div>
 </template>
 
 <script>
 export default {
-  name: "Navbar",
+  name: "AdminNavbar",
+  data() {
+    return {
+      // User: true,
+      // Eva:false,
+      // News:false,
+    };
+  },
   methods: {
     logout() {
       return this.$router.push("/");
     },
+    gotoAdminUser() {
+      // this.$router.push("/admin-user");
+      this.User = true;
+      this.Eva = false;
+      this.News = false;
+      this.showUser();
+    },
+    gotoAdminEva() {
+      // this.$router.push("/admin-history");
+      this.User = false;
+      this.Eva = true;
+      this.News = false;
+      this.showEva();
+    },
+    gotoAdminNews() {
+      // this.$router.push("/admin-news");
+      this.User = false;
+      this.Eva = false;
+      this.News = true;
+      this.showNews();
+    },
+    showUser(){
+        this.$router.push("/admin-user");
+    },
+    showEva(){
+      this.$router.push("/admin-history");
+    },
+    showNews(){
+      this.$router.push("/admin-news");
+    }
   },
 };
 </script>
@@ -66,7 +114,7 @@ export default {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   z-index: 2;
 }
-.hnavbar{
+.hnavbar {
   display: none;
 }
 .container-fluid {
@@ -129,6 +177,13 @@ button.logout-btn:active {
   align-items: center;
   justify-content: center;
 }
+.sidebar-list p:hover{
+  cursor: pointer;
+  background-color: #2d9e87;
+}
+.button-select-active{
+   background-color: #2d9e87;
+}
 
 @media (max-width: 1600px) {
   .container-fluid {
@@ -149,16 +204,16 @@ button.logout-btn:active {
   .container-fluid {
     max-width: 720px;
   }
-  .snavbar{
+  .snavbar {
     display: none;
   }
-  .hnavbar{
+  .hnavbar {
     display: contents;
   }
-  .sidebar{
+  .sidebar {
     display: none;
   }
-  .mainpage{
+  .mainpage {
     margin-left: 0;
   }
 }

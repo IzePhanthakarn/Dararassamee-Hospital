@@ -13,10 +13,10 @@ import EvaluationQ5View from "../views/EvaluationQ5View.vue";
 import EvaluationQ8View from "../views/EvaluationQ8View.vue";
 import EvaluationQ9View from "../views/EvaluationQ9View.vue";
 import SelectEvaluationView from "../views/SelectEvaluationView.vue";
-import AdminHistoryView from "../views/AdminView/AdminHistoryView.vue";
-import AdminHomeView from "../views/AdminView/AdminHomeView.vue";
-import AdminInformationView from "../views/AdminView/AdminInformationView.vue";
+import AdminElearnView from "../views/AdminView/AdminElearnView.vue";
+import AdminNewsView from "../views/AdminView/AdminNewsView.vue";
 import AdminUserView from "../views/AdminView/AdminUserView.vue";
+import AdminDetailsView from "../views/AdminView/AdminDetailsView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -92,9 +92,9 @@ const router = createRouter({
       component: SelectEvaluationView,
     },
     {
-      path: "/admin-history",
-      name: "admin-history",
-      component: AdminHistoryView,
+      path: "/admin-elearn",
+      name: "admin-elearn",
+      component: AdminElearnView,
     },
     {
       path: "/admin-user",
@@ -102,15 +102,15 @@ const router = createRouter({
       component: AdminUserView,
     },
     {
-      path: "/admin-information",
-      name: "admin-information",
-      component: AdminInformationView,
+      path: "/admin-news",
+      name: "admin-news",
+      component: AdminNewsView,
     },
     {
-      path: "/admin-home",
-      name: "admin-home",
-      component: AdminHomeView,
-    },
+      path: "/user-details/:name",
+      name: "รายละเอียดผู้ป่วย",
+      component: AdminDetailsView,
+    }
   ],
 });
 
