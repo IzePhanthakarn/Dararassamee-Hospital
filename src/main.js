@@ -28,6 +28,7 @@ import PhysicalData from "./components/history/data-history/physical-data.vue";
 import MentallyData from "./components/history/data-history/mentally-data.vue";
 import UserInfo from "./components/adminpage/adminData/user-info.vue";
 import NewsInfo from "./components/adminpage/adminData/news-info.vue";
+import ElearnInfo from "./components/adminpage/adminData/elearn-info.vue";
 library.add(fas);
 library.add(far);
 library.add(fab);
@@ -55,6 +56,7 @@ app.component("PhyData",PhysicalData);
 app.component("MentData",MentallyData);
 app.component("UserInfo",UserInfo);
 app.component("NewsInfo",NewsInfo);
+app.component("ElearnInfo",ElearnInfo);
 
 app.use(router);
 

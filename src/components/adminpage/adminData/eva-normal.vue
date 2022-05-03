@@ -71,7 +71,7 @@ export default {
 }
 .status-normal {
   border: solid 2px green;
-  background: lightgreen;
+  background: rgb(179, 235, 179);
 }
 
 table {
