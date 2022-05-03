@@ -27,12 +27,11 @@ export default {
   color: aliceblue;
   background-image: linear-gradient(to right, #80073c, #b30a53);
   border-radius: 15px;
-  height: 50px;
+  height: 60px;
   width: 100%;
   margin-bottom: 10px;
   display: flex;
   align-items: center;
-  
 }
 .box-title {
   display: flex;

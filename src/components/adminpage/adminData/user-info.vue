@@ -41,7 +41,7 @@ td {
 }
 td.normal-status {
   border: solid 2px green;
-  background: lightgreen;
+  background: rgb(179, 235, 179);
 }
 td.warning-status {
   border: solid 2px orange;
@@ -49,6 +49,6 @@ td.warning-status {
 }
 td.danger-status {
   border: solid 2px red;
-  background: lightpink;
+  background: rgb(255, 213, 219);
 }
 </style>

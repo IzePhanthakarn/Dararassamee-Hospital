@@ -32,6 +32,9 @@
     </div>
     <div class="status">สถานะ : ปกติ</div>
   </div>
+  <div class="button-area">
+    <button>เพิ่มประวัติการรักษา</button>
+  </div>
 </template>
 
 <script>
