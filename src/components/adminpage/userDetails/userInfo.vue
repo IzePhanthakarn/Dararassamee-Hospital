@@ -4,6 +4,7 @@
       <Ad-Title/>
     </div>
     <div class="ccontainer">
+      <Ad-Backbtn/>
       <div class="profile-data">
         <!-- pname -->
         <p>คำนำหน้า : ร.ต.ท.</p> 
@@ -55,6 +56,9 @@ export default {
   border-radius: 20px;
   padding: 20px;
 }
+.profile-data{
+  margin-top: 15px;
+}
 .profile-data p {
   background: #fff;
   margin: 10px 0;
@@ -62,7 +66,7 @@ export default {
   padding: 5px 30px;
   border-radius: 10px;
   border: solid 1px #80073c;
-  font-size: 16px;
+  font-size: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 3px 3px 5px 0 rgba(0, 0, 0, 0.19);
 }
 </style>
