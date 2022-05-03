@@ -1,4 +1,7 @@
 <template>
+  <header>
+    <Ad-Nav />
+  </header>
   <div>
     <AdminElearn />
   </div>

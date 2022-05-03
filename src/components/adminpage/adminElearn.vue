@@ -1,5 +1,5 @@
 <template>
-  <Ad-Nav />
+<h1>KKKKKKK</h1>
 </template>
 
 <script>

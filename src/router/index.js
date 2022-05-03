@@ -17,7 +17,13 @@ import AdminElearnView from "../views/AdminView/AdminElearnView.vue";
 import AdminNewsView from "../views/AdminView/AdminNewsView.vue";
 import AdminUserView from "../views/AdminView/AdminUserView.vue";
 import AdminDetailsView from "../views/AdminView/AdminDetailsView.vue";
-import AdminEvaluationView from "../views/AdminView/AdminEvaluationView.vue"
+import AdminEvaluationView from "../views/AdminView/AdminEvaluationView.vue";
+import UserInformationView from "../views/AdminView/UserDetailsView/UserInformationView.vue";
+import StatusDangerView from "../views/AdminView/EvaluationDataView/StatusDangerView.vue";
+import StatusNormalView from "../views/AdminView/EvaluationDataView/StatusNormalView.vue";
+import StatusWarningView from "../views/AdminView/EvaluationDataView/StatusWarningView.vue";
+import UserDiseaseView from "../views/AdminView/UserDetailsView/UserDiseaseView.vue";
+import UserLabView from "../views/AdminView/UserDetailsView/UserLabView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -94,17 +100,17 @@ const router = createRouter({
     },
     {
       path: "/admin-elearn",
-      name: "admin-elearn",
+      name: "ศูนย์การเรียนรู้",
       component: AdminElearnView,
     },
     {
       path: "/admin-user",
-      name: "admin-user",
+      name: "รายชื่อผู้ป่วย",
       component: AdminUserView,
     },
     {
       path: "/admin-evaluation",
-      name: "admin-evaluation",
+      name: "ผลการประเมิน",
       component: AdminEvaluationView,
     },
     {
@@ -116,6 +122,36 @@ const router = createRouter({
       path: "/user-details/:name",
       name: "รายละเอียดผู้ป่วย",
       component: AdminDetailsView,
+    },
+    {
+      path: "/user-details/information",
+      name: "ประวัติผู้ป่วย",
+      component: UserInformationView,
+    },
+    {
+      path: "/user-details/lab",
+      name: "ผลแลป",
+      component: UserLabView,
+    },
+    {
+      path: "/user-details/disease",
+      name: "โรคปัจจุบัน",
+      component:UserDiseaseView,
+    },
+    {
+      path: "/normal",
+      name: "ปกติ",
+      component:StatusNormalView,
+    },
+    {
+      path: "/warning",
+      name: "ปานกลาง",
+      component:StatusWarningView,
+    },
+    {
+      path: "/danger",
+      name: "อันตราย",
+      component:StatusDangerView,
     }
   ],
 });

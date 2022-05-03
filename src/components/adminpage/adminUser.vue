@@ -1,5 +1,8 @@
 <template>
   <div class="mainpage">
+    <div class="title-bar">
+      <Ad-Topic/>
+    </div>
     <div class="ccontainer">
       <div class="data-content">
         <div class="info-box">
@@ -29,7 +32,6 @@
             <UserInfo
               v-for="(item, index) in patientdata"
               :key="index"
-              :patient="item"
               :id="index + 1"
               :name="item.pname + ' ' + item.fname + ' ' + item.lname"
               :date="item.birthday"
@@ -54,9 +56,16 @@ export default {
 </script>
 
 <style scoped>
+.title-bar{
+  display: flex;
+  justify-content: flex-start;
+  width: 80%;
+  height: auto;
+}
 .mainpage {
   margin-left: 20vw;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 80vw;

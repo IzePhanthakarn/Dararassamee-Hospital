@@ -8,7 +8,8 @@ import { fas } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import Navbar from "./components/mainpage/navbar.vue";
 import AdminNavbar from "./components/adminpage/subcomponents/navbarAdmin.vue";
-import AdminTitleBar from "./components/adminpage/subcomponents/titlebarAdmin.vue"
+import AdminTitleBar from "./components/adminpage/subcomponents/titlebarAdmin.vue";
+import AdminTopicBar from "./components/adminpage/subcomponents/topicbarAdmin.vue";
 import OptionIncome from "./components/subcomponents/evaluationsubQ5/option-part1/option-income.vue";
 import OptionSex from "./components/subcomponents/evaluationsubQ5/option-part1/option-sex.vue";
 import OptionStudy from "./components/subcomponents/evaluationsubQ5/option-part1/option-study.vue";
@@ -35,6 +36,7 @@ app.component("fa", FontAwesomeIcon);
 app.component("Nav",Navbar);
 app.component("Ad-Nav",AdminNavbar);
 app.component("Ad-Title",AdminTitleBar);
+app.component("Ad-Topic",AdminTopicBar);
 app.component("Opbar-income", OptionIncome);
 app.component("Opbar-sex", OptionSex);
 app.component("Opbar-study", OptionStudy);
