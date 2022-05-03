@@ -125,6 +125,7 @@ p{
   border-radius: 20px;
   padding: 20px;
 }
+<<<<<<< HEAD
 
 .button-area {
   display: flex;
@@ -195,5 +196,19 @@ justify-content: space-around;
   display: flex;
   justify-content: flex-end;
   width: 50%;
+=======
+.profile-data{
+  margin-top: 15px;
+}
+.profile-data p {
+  background: #fff;
+  margin: 10px 0;
+  width: 100%;
+  padding: 5px 30px;
+  border-radius: 10px;
+  border: solid 1px #80073c;
+  font-size: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 3px 3px 5px 0 rgba(0, 0, 0, 0.19);
+>>>>>>> 037c848c9464a4fb2224d1012e7135ffee404532
 }
 </style>

@@ -4,6 +4,7 @@
       <Ad-Topic />
     </div>
     <div class="ccontainer">
+      <Ad-Backbtn/>
       <table>
         <tr>
           <th>ชื่อ</th>
@@ -64,7 +65,7 @@ export default {
   height: auto;
   background: rgba(125, 6, 51, 0.35);
   border-radius: 20px;
-  padding: 30px;
+  padding: 25px;
 }
 .name-danger {
   width: 50%;
@@ -73,13 +74,12 @@ export default {
   border: solid 2px red;
   background: rgb(255, 213, 219);
 }
-
 table {
   width: 100%;
   border: solid 1px black;
   text-align: center;
   background: #fff;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 th {
   border: solid 2px black;

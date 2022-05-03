@@ -4,21 +4,24 @@
       <Ad-Title />
     </div>
     <div class="ccontainer">
-      <div @click="goToUserInformation()" class="box-button">
-        <button>ประวัติผู้ป่วย</button>
-      </div>
-      <div @click="goToUserDisease()" class="box-button">
-        <button>โรคปัจจุบัน</button>
-      </div>
-      <div @click="goToUserXray()" class="box-button">
-        <button>ผลเอกซเรย์</button>
-      </div>
+      <Ad-Backbtn/>
+      <div class="data-info">
+        <div @click="goToUserInformation()" class="box-button">
+          <button>ประวัติผู้ป่วย</button>
+        </div>
+        <div @click="goToUserDisease()" class="box-button">
+          <button>โรคปัจจุบัน</button>
+        </div>
+        <div @click="goToUserXray()" class="box-button">
+          <button>ผลเอกซเรย์</button>
+        </div>
 
-      <div @click="goToUserLab()" class="box-button">
-        <button>ผลแลป</button>
+        <div @click="goToUserLab()" class="box-button">
+          <button>ผลแลป</button>
+        </div>
+        <div class="box-button"><button>ของกินที่ชอบ</button></div>
+        <div class="box-button"><button>น้ำหนักที่เพิ่ม</button></div>
       </div>
-      <div class="box-button"><button>ของกินที่ชอบ</button></div>
-      <div class="box-button"><button>น้ำหนักที่เพิ่ม</button></div>
     </div>
   </div>
 </template>
@@ -66,14 +69,18 @@ export default {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 20px;
   padding: 30px;
+  
+}
+.data-info{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
+  margin-top: 20px;
 }
-.box-button{
+.box-button {
   width: 100%;
 }
-.box-button button{
+.box-button button {
   width: 100%;
   height: 250px;
   border-radius: 20px;
@@ -81,13 +88,13 @@ export default {
   border: solid 3px #80073c;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
   font-size: 30px;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
-.box-button button:hover{
-  transform: scale(.97);
+.box-button button:hover {
+  transform: scale(0.97);
 }
-.box-button button:active{
+.box-button button:active {
   transform: scale(1);
 }
 </style>
