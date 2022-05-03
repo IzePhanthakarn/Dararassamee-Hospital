@@ -26,6 +26,7 @@ export default {
   padding: 10px;
   color: aliceblue;
   background-image: linear-gradient(to right, #80073c, #b30a53);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
   border-radius: 15px;
   height: 60px;
   width: 100%;
