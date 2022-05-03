@@ -33,14 +33,16 @@ export default {
   },
   methods: {
     goToUserInformation() {
-      return this.$router.push("/user-details/information");
+      return this.$router.push(`/user-details/${this.$route.params.name}/information`);
     },
     goToUserDisease() {
-      return this.$router.push("/user-details/disease");
+      return this.$router.push(`/user-details/${this.$route.params.name}/disease`);
     },
-    goToUserXray() {},
+    goToUserXray() {
+      console.log(this.$route.params.name)
+    },
     goToUserLab() {
-      return this.$router.push("/user-details/lab");
+      return this.$router.push(`/user-details/${this.$route.params.name}/lab`);
     },
   },
 };

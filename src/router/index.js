@@ -124,17 +124,17 @@ const router = createRouter({
       component: AdminDetailsView,
     },
     {
-      path: "/user-details/information",
+      path: "/user-details/:name/information",
       name: "ประวัติผู้ป่วย",
       component: UserInformationView,
     },
     {
-      path: "/user-details/lab",
+      path: "/user-details/:name/lab",
       name: "ผลแลป",
       component: UserLabView,
     },
     {
-      path: "/user-details/disease",
+      path: "/user-details/:name/disease",
       name: "โรคปัจจุบัน",
       component:UserDiseaseView,
     },
