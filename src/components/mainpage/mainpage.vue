@@ -12,7 +12,27 @@
           <div class="info-list">
             <button @click="gohistory" class="info-btn">ประวัติการรักษา</button>
             <button @click="goinfo" class="info-btn">ศูนย์ความรู้</button>
-            <button @click="goevaluation" class="info-btn">แบบประเมิน</button>
+            <button
+              @click="() => TogglePopup('buttonTrigger')"
+              id="savebutton"
+              class="info-btn"
+            >
+              แบบประเมิน
+            </button>
+            <PopupEva
+              v-if="popupTriggers.buttonTrigger"
+              :TogglePopup="() => TogglePopup('buttonTrigger')"
+            >
+              <h2>
+                แบบประเมินต่อไปนี้จะมีการเก็บบันทึกข้อมูลส่วนตัวของคุณ
+                รวมถึงเรื่องสภาพทางการเงินและสภาพครอบครัว
+                ทั้งนี้ก็เพื่อที่จะนำข้อมมูลที่เก็บรวบรวม
+                มาใช้ในการประเมินสุขภาพจิตและคัดกรองความเสี่ยงต่อการเป็นโรคซึมเศร้า
+                หากพบว่าคุณมีภาวะเสี่ยงต่อการเป็นโรคซึมเศร้าหรือมีภาวะเสี่ยงทางสุขภาพจิตด้านอื่น
+                ๆ ทางเราจะรีบติดต่อกลับมาเพื่อดำเนินการรักษาให้เร็วที่สุด
+                ขอบคุณค่ะ !
+              </h2>
+            </PopupEva>
           </div>
         </div>
         <div class="label-btn">
@@ -37,13 +57,26 @@
 </template>
 
 <script>
-import { RouterLink } from "vue-router";
 import Navbar from "./navbar.vue";
-import { useRouter } from "vue-router";
 import Slider from "./slider.vue";
+import { ref } from "vue";
 
 export default {
   name: "mainPage",
+  setup() {
+    const popupTriggers = ref({
+      buttonTrigger: false,
+      timedTrigger: false,
+    });
+    const TogglePopup = (trigger) => {
+      popupTriggers.value[trigger] = !popupTriggers.value[trigger];
+    };
+
+    return {
+      popupTriggers,
+      TogglePopup,
+    };
+  },
   components: {
     Navbar,
     Slider,
@@ -55,9 +88,9 @@ export default {
     goinfo() {
       return this.$router.push("/information");
     },
-    goevaluation() {
-      return this.$router.push("/select-evaluation");
-    },
+    // goevaluation() {
+    //   this.$router.push("/select-evaluation");
+    // },
     goappointment() {
       return this.$router.push("/appointment");
     },
