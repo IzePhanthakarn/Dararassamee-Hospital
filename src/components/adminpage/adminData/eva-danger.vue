@@ -71,7 +71,7 @@ export default {
 }
 .status-danger {
   border: solid 2px red;
-  background: lightpink;
+  background: rgb(255, 213, 219);
 }
 
 table {

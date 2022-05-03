@@ -12,7 +12,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(212, 212, 212);
+    background-color: #fff;
     padding: 20px;
     border-radius: 15px 15px 0 0;
   }
@@ -31,7 +31,7 @@
     height: 100%;
   }
   .detail-data-topic {
-    background-color: aliceblue;
+    background-color: #fff;
     padding: 10px 20px;
     display: flex;
     height: auto;
@@ -44,7 +44,7 @@
     width: 100%;
   }
   .detail-data:hover{
-    background-color: rgb(173, 173, 173);
+    background-color: lightgray;
   }
   .disease {
     display: flex;

@@ -39,7 +39,7 @@ export default {
 </script>
 
 <style scoped>
-.title-bar {
+.title-bar{
   display: flex;
   justify-content: flex-start;
   width: 80%;
@@ -48,31 +48,59 @@ export default {
 .mainpage {
   margin-left: 20vw;
   display: flex;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   width: 80vw;
   height: 90vh;
 }
 .ccontainer {
   width: 80%;
-  height: auto;
+  height: 50%;
   background: rgba(125, 6, 51, 0.35);
   border-radius: 20px;
-  padding: 30px 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .top-box {
-  display: flex;
-  justify-content: space-around;
+  padding: 40px;
   width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
 }
 .box-button {
-  width: 30%;
-  height: 100px;
+  width: 100%;
+  height: 100%;
 }
 .box-button button {
   width: 100%;
   height: 100%;
-  font-size: 30px;
+  border-radius: 20px;
+  font-size: 35px;
+  /* background-color: #fff;
+  border: solid 3px #80073c; */
+  transition: all 0.3s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.normal button{
+  border: solid 3px green;
+  background: rgb(179, 235, 179);
+}
+.warning button{
+  border: solid 3px orange;
+  background: lightyellow;
+}
+.danger button{
+  border: solid 3px red;
+  background: rgb(255, 213, 219);
+}
+.box-button button:hover{
+  transform: scale(.95);
+}
+.box-button button:active{
+  transform: scale(1);
 }
 </style>

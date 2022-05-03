@@ -27,8 +27,8 @@ export default {
   color: aliceblue;
   background-image: linear-gradient(to right, #80073c, #b30a53);
   border-radius: 15px;
-  height: 50px;
-  width: 30%;
+  height: 60px;
+  width: 100%;
   margin-bottom: 10px;
   display: flex;
   align-items: center;
@@ -36,12 +36,15 @@ export default {
 }
 .box-title {
   display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100%;
+  margin-left: 10px;
 }
 .box-title b {
   width: 100%;
   height: 100%;
-  margin-left: 10px;
+  margin-left: 30px;
   font-size: 25px;
   text-align: center;
 }

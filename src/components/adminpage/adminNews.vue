@@ -1,5 +1,8 @@
 <template>
   <div class="mainpage">
+    <div class="title-bar">
+      <Ad-Topic/>
+    </div>
     <div class="ccontainer">
       <div class="data-content">
         <div class="table-container">
@@ -9,7 +12,7 @@
                 <th>ลำดับ</th>
                 <th>ตัวอย่างภาพ</th>
                 <th>ชื่อภาพ</th>
-                <th>อัพโหลด</th>
+                <th>แก้ไข</th>
                 <th>ลบ</th>
               </tr>
             </thead>
@@ -24,6 +27,7 @@
           </table>
         </div>
         <div class="news-info">
+          <button type="submit" class="btn btn-secondary">เพิ่ม</button>
           <button type="submit" class="btn btn-success">บันทึก</button>
         </div>
       </div>
@@ -43,9 +47,16 @@ export default {
 </script>
 
 <style scoped>
+.title-bar{
+  display: flex;
+  justify-content: flex-start;
+  width: 80%;
+  height: auto;
+}
 .mainpage {
   margin-left: 20vw;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 80vw;
@@ -91,14 +102,18 @@ thead th {
 }
 .news-info{
   margin: 13px 10px 0 0;
-  width: 120px;
+  width: 350px;
   height: 40px;
+  display: flex;
+  justify-content: space-between;
+  
 }
 .news-info button{
   /* background: #b30a53; */
   color: #fff;
   border: none;
   width: 100%;
+  margin-left: 20px;
   height: 100%;
   border-radius: 10px;
   transition: all .3s;
