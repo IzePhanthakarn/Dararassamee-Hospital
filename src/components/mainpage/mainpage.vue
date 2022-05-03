@@ -22,7 +22,8 @@
             <PopupEva
               v-if="popupTriggers.buttonTrigger"
               :TogglePopup="() => TogglePopup('buttonTrigger')"
-            >
+            > 
+            <div class="text-alert">
               <h2>
                 แบบประเมินต่อไปนี้จะมีการเก็บบันทึกข้อมูลส่วนตัวของคุณ
                 รวมถึงเรื่องสภาพทางการเงินและสภาพครอบครัว
@@ -32,6 +33,7 @@
                 ๆ ทางเราจะรีบติดต่อกลับมาเพื่อดำเนินการรักษาให้เร็วที่สุด
                 ขอบคุณค่ะ !
               </h2>
+              </div>
             </PopupEva>
           </div>
         </div>

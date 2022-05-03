@@ -100,7 +100,7 @@ const router = createRouter({
     },
     {
       path: "/admin-elearn",
-      name: "ศูนย์การเรียนรู้",
+      name: "ศูนย์ความรู้",
       component: AdminElearnView,
     },
     {
@@ -115,7 +115,7 @@ const router = createRouter({
     },
     {
       path: "/admin-news",
-      name: "admin-news",
+      name: "ข่าวประชาสัมพันธ์",
       component: AdminNewsView,
     },
     {

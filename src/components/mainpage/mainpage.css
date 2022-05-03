@@ -3,7 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+.text-alert h2{
+  background-color: lightgray;
+}
 .main {
   /* background-image: url("/public/dara-hospital.jpg"); */
   /* background-size: cover; */
