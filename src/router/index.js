@@ -21,7 +21,9 @@ import AdminEvaluationView from "../views/AdminView/AdminEvaluationView.vue";
 import UserInformationView from "../views/AdminView/UserDetailsView/UserInformationView.vue";
 import StatusDangerView from "../views/AdminView/EvaluationDataView/StatusDangerView.vue";
 import StatusNormalView from "../views/AdminView/EvaluationDataView/StatusNormalView.vue";
-import StatusWarningView from "../views/AdminView/EvaluationDataView/StatusWarningView.vue"
+import StatusWarningView from "../views/AdminView/EvaluationDataView/StatusWarningView.vue";
+import UserDiseaseView from "../views/AdminView/UserDetailsView/UserDiseaseView.vue";
+import UserLabView from "../views/AdminView/UserDetailsView/UserLabView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -122,9 +124,19 @@ const router = createRouter({
       component: AdminDetailsView,
     },
     {
-      path: "/user-details/:name/information",
+      path: "/user-details/information",
       name: "ประวัติผู้ป่วย",
       component: UserInformationView,
+    },
+    {
+      path: "/user-details/lab",
+      name: "ผลแลป",
+      component: UserLabView,
+    },
+    {
+      path: "/user-details/disease",
+      name: "โรคปัจจุบัน",
+      component:UserDiseaseView,
     },
     {
       path: "/normal",

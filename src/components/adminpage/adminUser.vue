@@ -32,7 +32,6 @@
             <UserInfo
               v-for="(item, index) in patientdata"
               :key="index"
-              :patient="item"
               :id="index + 1"
               :name="item.pname + ' ' + item.fname + ' ' + item.lname"
               :date="item.birthday"

@@ -1,42 +1,45 @@
 <template>
   <div class="mainpage">
     <div class="title-bar">
-      <Ad-Topic/>
+      <Ad-Topic />
     </div>
     <div class="ccontainer">
       <div class="top-box">
-        <div @click="goToNormal" class="box-button normal"><button>ปกติ</button></div>
-        <div @click="goToWarning" class="box-button warning"><button>สุ่มเสี่ยง</button></div>
-        <div @click="goToDanger" class="box-button danger"><button>อันตราย</button></div>
+        <div @click="goToNormal" class="box-button normal">
+          <button>ปกติ</button>
+        </div>
+        <div @click="goToWarning" class="box-button warning">
+          <button>สุ่มเสี่ยง</button>
+        </div>
+        <div @click="goToDanger" class="box-button danger">
+          <button>อันตราย</button>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import patientdata from '../../json/patient.json'
 export default {
   data() {
-    return{
-      patientdata,
-    }
+    return {};
   },
-  methods:{
-    goToNormal(){
+  methods: {
+    goToNormal() {
       return this.$router.push("/normal");
     },
-    goToWarning(){
+    goToWarning() {
       return this.$router.push("/warning");
     },
-    goToDanger(){
+    goToDanger() {
       return this.$router.push("/danger");
-    }
-  }
+    },
+  },
 };
 </script>
 
 <style scoped>
-.title-bar{
+.title-bar {
   display: flex;
   justify-content: flex-start;
   width: 80%;
@@ -67,10 +70,9 @@ export default {
   width: 30%;
   height: 100px;
 }
-.box-button button{
- width: 100%;
- height: 100%;
- font-size: 30px;
+.box-button button {
+  width: 100%;
+  height: 100%;
+  font-size: 30px;
 }
-
 </style>

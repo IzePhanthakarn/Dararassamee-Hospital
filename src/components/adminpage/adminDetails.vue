@@ -1,16 +1,24 @@
 <template>
   <div class="mainpage">
     <div class="title-bar">
-      <Ad-Title/>
+      <Ad-Title />
     </div>
     <div class="ccontainer">
       <div class="top-box">
-        <div @click="goToUserInformation" class="box-button"><button>ประวัติผู้ป่วย</button></div>
-        <div class="box-button"><button>โรคปัจจุบัน</button></div>
-        <div class="box-button"><button>ผลเอกซเรย์</button></div>
+        <div @click="goToUserInformation()" class="box-button">
+          <button>ประวัติผู้ป่วย</button>
+        </div>
+        <div @click="goToUserDisease()" class="box-button">
+          <button>โรคปัจจุบัน</button>
+        </div>
+        <div @click="goToUserXray()" class="box-button">
+          <button>ผลเอกซเรย์</button>
+        </div>
       </div>
       <div class="bottom-box">
-        <div class="box-button"><button>ตำแหน่งปัจจุบัน</button></div>
+        <div @click="goToUserLab()" class="box-button">
+          <button>ผลแลป</button>
+        </div>
         <div class="box-button"><button>ของกินที่ชอบ</button></div>
         <div class="box-button"><button>น้ำหนักที่เพิ่ม</button></div>
       </div>
@@ -23,11 +31,18 @@ export default {
   data() {
     return {};
   },
-  methods:{
-    goToUserInformation(){
-      return this.$router.push(`/user-details/${name}/information`);
-    }
-  }
+  methods: {
+    goToUserInformation() {
+      return this.$router.push("/user-details/information");
+    },
+    goToUserDisease() {
+      return this.$router.push("/user-details/disease");
+    },
+    goToUserXray() {},
+    goToUserLab() {
+      return this.$router.push("/user-details/lab");
+    },
+  },
 };
 </script>
 
@@ -41,7 +56,7 @@ export default {
   width: 80vw;
   height: 90vh;
 }
-.title-bar{
+.title-bar {
   width: 80%;
   height: auto;
 }
