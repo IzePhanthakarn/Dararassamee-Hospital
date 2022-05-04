@@ -15,6 +15,7 @@
         <div class="details-meet">
           <p>เวลา : {{item.time}}</p>
       <p>สถานที่ : {{item.station}}</p>
+      <p>แผนก : {{item.department}}</p>
         </div>
         <div class="doctor-name">
           <p>ชื่อแพทย์ : {{item.doctor}}</p>
@@ -31,11 +32,11 @@ export default {
   return{
     message:"Home",
     meetdate: [
-      { date: "01 กุมภาพันธ์ 2565",time:"1.30",station:"โรงพยาบาลหมี",doctor:"ดร.เบาบาง" },
-      { date: "02 กุมภาพันธ์ 2565",time:"2.30",station:"โรงพยาบาลหมา ",doctor:"ดร.เบาบางมาก" },
-     { date: "03 กุมภาพันธ์ 2565",time:"3.30",station:"โรงพยาบาลแมว",doctor:"ดร.เบาบางมากๆ" },
-     { date: "04 กุมภาพันธ์ 2565",time:"4.30",station:"โรงพยาบาลหมู",doctor:"ดร.เบาบางมากๆๆ" },
-     { date: "05 กุมภาพันธ์ 2565",time:"5.30",station:"โรงพยาบาลหิว",doctor:"ดร.เบาบางมากๆๆๆ" },
+      { date: "01 กุมภาพันธ์ 2565",time:"1.30",station:"โรงพยาบาลหมี",doctor:"ดร.เบาบาง",department:"ดวงตา" },
+      { date: "02 กุมภาพันธ์ 2565",time:"2.30",station:"โรงพยาบาลหมา ",doctor:"ดร.เบาบางมาก",department:"กระดูก" },
+     { date: "03 กุมภาพันธ์ 2565",time:"3.30",station:"โรงพยาบาลแมว",doctor:"ดร.เบาบางมากๆ",department:"จิตใจ" },
+     { date: "04 กุมภาพันธ์ 2565",time:"4.30",station:"โรงพยาบาลหมู",doctor:"ดร.เบาบางมากๆๆ" ,department:"ขายส่ง"},
+     { date: "05 กุมภาพันธ์ 2565",time:"5.30",station:"โรงพยาบาลหิว",doctor:"ดร.เบาบางมากๆๆๆ" ,department:"ผลิต"},
     ],
   }
   },

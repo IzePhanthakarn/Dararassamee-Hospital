@@ -37,7 +37,6 @@ export default {
 .box-option {
   display: flex;
   width: 100%;
-  background-color: aqua;
 }
 .study-option{
   width: 50%;

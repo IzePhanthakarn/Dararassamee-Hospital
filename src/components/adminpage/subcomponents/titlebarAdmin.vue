@@ -4,7 +4,9 @@
       <div class="icon">
          <fa :icon="['fas', 'hospital-user']" class="user-icon" />
       </div>
+      <div class="title-name">
       <b>{{ $route.params.name }}</b>
+      </div>
     </div>
   </div>
 </template>
@@ -16,7 +18,8 @@ export default {
 
 <style scoped>
 .icon{
-  width: 15%;
+  margin-left: 10px;
+  width: 5%;
   height: 100%;
 }
 .user-icon{
@@ -34,8 +37,15 @@ export default {
   display: flex;
   align-items: center;
 }
+.title-name{
+  width: 100%;
+}
+.title-name b{
+  width: 100%;
+}
 .box-title {
   display: flex;
+  width: 100%;
   height: 100%;
 }
 .box-title b {

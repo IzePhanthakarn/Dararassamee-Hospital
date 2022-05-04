@@ -1,14 +1,25 @@
 <template>
+<div class="body-popup">
   <div class="popup">
     <div class="popup-inner">
-        <div class="box-popup-icon">
-      <fa :icon="['fas', 'triangle-exclamation']" class="popup-icon" />
+      <div class="box-popup-icon">
+        <fa :icon="['fas', 'triangle-exclamation']" class="popup-icon" />
       </div>
-      <slot />
+      <div class="text-alert">
+        <h2>
+          แบบประเมินต่อไปนี้จะมีการเก็บบันทึกข้อมูลส่วนตัวของคุณ
+          รวมถึงเรื่องสภาพทางการเงินและสภาพครอบครัว
+          ทั้งนี้ก็เพื่อที่จะนำข้อมมูลที่เก็บรวบรวม
+          มาใช้ในการประเมินสุขภาพจิตและคัดกรองความเสี่ยงต่อการเป็นโรคซึมเศร้า
+          หากพบว่าคุณมีภาวะเสี่ยงต่อการเป็นโรคซึมเศร้าหรือมีภาวะเสี่ยงทางสุขภาพจิตด้านอื่น
+          ๆ ทางเราจะรีบติดต่อกลับมาเพื่อดำเนินการรักษาให้เร็วที่สุด ขอบคุณค่ะ !
+        </h2>
+      </div>
       <div class="popupbox">
         <button class="popup-save" @click="TogglePopup()">ยอมรับ</button>
       </div>
     </div>
+  </div>
   </div>
 </template>
 
@@ -24,14 +35,23 @@ export default {
 </script>
 
 <style scoped>
-.box-popup-icon{
-    display: flex;
-    justify-content: center;
-    margin: 0 0 15px 0;
+
+.text-alert{
+  padding: 50px;
+  display: flex;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: lightgray;
 }
-.popup-icon{
-    font-size: 100px;
-    color:rgb(210, 0, 0)
+.box-popup-icon {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 15px 0;
+}
+.popup-icon {
+  font-size: 100px;
+  color: rgb(210, 0, 0);
 }
 .popup {
   position: fixed;
@@ -45,7 +65,7 @@ export default {
   justify-content: center;
 }
 .popup-inner {
-  background-color: #FFF;
+  background-color: #fff;
   padding: 30px;
   border-radius: 30px;
   border: 2px solid black;
