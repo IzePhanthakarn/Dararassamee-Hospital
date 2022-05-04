@@ -1,36 +1,59 @@
 <template>
   <div class="mainpage">
     <div class="title-bar">
-      <Ad-Title/>
+      <Ad-Title />
     </div>
     <div class="ccontainer">
-      <Ad-Backbtn/>
-      <div class="profile-data">
-        <!-- pname -->
-        <p>คำนำหน้า : ร.ต.ท.</p> 
-        <!-- fname -->
-        <p>ชื่อ : สวัสดี</p>
-        <!-- lname -->
-        <p>นามสกุล : ไทยแลนด์</p>
-        <p>เลขบัตรประชาชน : <label> x-xxxx-xxxxx-xx-x</label></p>
+      <div v-for="(item, index) in listdata" :key="index" class="profile-data">
+        <p>คำนำหน้า : {{ item.pname }}</p>
+        <p>ชื่อ : {{ item.fname }}</p>
+        <p>นามสกุล : {{ item.lname }}</p>
+        <p>
+          เลขบัตรประชาชน : <label> {{ item.cid }}</label>
+        </p>
         <p>เพศ : ชาย</p>
-        <p>วัน/เดือน/ปี เกิด : <label> 24 พฤศจิกายน 2535</label></p>
-        <p>ส่วนสูง : 168 เซนติเมตร</p>
+        <p>
+          วันเกิดฉันปีนี้ : <label> {{ item.birthday }}</label>
+        </p>
+        <p>ส่วนสูง : {{ item.height }} เซนติเมตร</p>
         <p>น้ำหนัก : 60 กิโลกรัม</p>
-        <p>หมู่เลือด : B</p>
-        <p>เบอร์โทรติดต่อ : <label> 081-xxx-xxxx</label></p>
-        <p>ที่อยู่ : 72/6 หมู่ 7 ตำบลสุขใจ อำเภอสบายดี จังหวัดอร่อยดี 72130</p>
+        <p>หมู่เลือด : {{ item.bloodgrp }}</p>
+        <p>
+          เบอร์โทรติดต่อ : <label> {{ item.hometel }}</label>
+        </p>
+        <p>ที่อยู่ : {{ item.informaddr }}</p>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import data from "../../../json/patient.json";
 export default {
   data() {
     return {
-      
+      data,
+      listdata: new Array(),
     };
+  },
+  mounted() {
+    this.fetchdata();
+  },
+  methods: {
+    fetchdata() {
+      for (let index = 0; index < this.data.length; index++) {
+        let testname =
+          this.data[index].pname +
+          " " +
+          this.data[index].fname +
+          " " +
+          this.data[index].lname;
+        if (testname === this.$route.params.name) {
+          this.listdata.push(this.data[index]);
+        }
+      }
+      console.log(this.listdata);
+    },
   },
 };
 </script>
@@ -45,7 +68,7 @@ export default {
   width: 80vw;
   height: 90vh;
 }
-.title-bar{
+.title-bar {
   width: 80%;
   height: auto;
 }

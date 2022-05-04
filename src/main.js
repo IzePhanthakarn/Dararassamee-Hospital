@@ -6,6 +6,7 @@ import { faApplePay, fab } from "@fortawesome/free-brands-svg-icons";
 import { far } from "@fortawesome/free-regular-svg-icons";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import PopupEva from "./components/subcomponents/popup/popupEva.vue"
 import Navbar from "./components/mainpage/navbar.vue";
 import AdminNavbar from "./components/adminpage/subcomponents/navbarAdmin.vue";
 import AdminTitleBar from "./components/adminpage/subcomponents/titlebarAdmin.vue";
@@ -59,7 +60,7 @@ app.component("MentData",MentallyData);
 app.component("UserInfo",UserInfo);
 app.component("NewsInfo",NewsInfo);
 app.component("ElearnInfo",ElearnInfo);
-
+app.component("PopupEva",PopupEva);
 app.use(router);
 
 app.mount("#app");

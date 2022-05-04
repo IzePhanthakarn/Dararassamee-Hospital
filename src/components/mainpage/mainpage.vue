@@ -12,7 +12,17 @@
           <div class="info-list">
             <button @click="gohistory" class="info-btn">ประวัติการรักษา</button>
             <button @click="goinfo" class="info-btn">ศูนย์ความรู้</button>
-            <button @click="goevaluation" class="info-btn">แบบประเมิน</button>
+            <button
+              @click="() => TogglePopup('buttonTrigger')"
+              id="savebutton"
+              class="info-btn"
+            >
+              แบบประเมิน
+            </button>
+            <PopupEva
+              v-if="popupTriggers.buttonTrigger"
+              :TogglePopup="() => TogglePopup('buttonTrigger')"
+            />
           </div>
         </div>
         <div class="label-btn">
@@ -37,13 +47,26 @@
 </template>
 
 <script>
-import { RouterLink } from "vue-router";
 import Navbar from "./navbar.vue";
-import { useRouter } from "vue-router";
 import Slider from "./slider.vue";
+import { ref } from "vue";
 
 export default {
   name: "mainPage",
+  setup() {
+    const popupTriggers = ref({
+      buttonTrigger: false,
+      timedTrigger: false,
+    });
+    const TogglePopup = (trigger) => {
+      popupTriggers.value[trigger] = !popupTriggers.value[trigger];
+    };
+
+    return {
+      popupTriggers,
+      TogglePopup,
+    };
+  },
   components: {
     Navbar,
     Slider,
@@ -55,9 +78,9 @@ export default {
     goinfo() {
       return this.$router.push("/information");
     },
-    goevaluation() {
-      return this.$router.push("/select-evaluation");
-    },
+    // goevaluation() {
+    //   this.$router.push("/select-evaluation");
+    // },
     goappointment() {
       return this.$router.push("/appointment");
     },

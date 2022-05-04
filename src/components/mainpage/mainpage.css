@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 .main {
   /* background-image: url("/public/dara-hospital.jpg"); */
   /* background-size: cover; */
@@ -157,6 +156,13 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+.popup-inner h2{
+  text-align: center;
+  background: white;
+  padding: 20px;
+  border-radius:40px ;
+  border: 3px solid black;
 }
 @media (max-width: 1600px) {
   .container-fluid {
