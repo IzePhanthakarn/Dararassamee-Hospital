@@ -4,8 +4,9 @@
       <Ad-Title />
     </div>
     <div class="ccontainer">
+      <Ad-Backbtn/>
       <div class="history-area">
-        <div class="button-area">
+        <div class="button-area2">
           <div class="box-showphy">
             <button
               :class="{ 'button-select-active': showPhy }"
@@ -126,10 +127,11 @@ p{
   padding: 20px;
 }
 
-.button-area {
+.button-area2 {
   display: flex;
 justify-content: space-around;
   width: 100%;
+  margin-top: 20px;
 }
 .box-showphy {
   width: 30%;

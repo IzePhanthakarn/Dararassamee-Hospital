@@ -4,6 +4,7 @@
       <Ad-Title />
     </div>
     <div class="ccontainer">
+      <Ad-Backbtn />
       <div v-for="(item, index) in listdata" :key="index" class="profile-data">
         <p>คำนำหน้า : {{ item.pname }}</p>
         <p>ชื่อ : {{ item.fname }}</p>
@@ -22,6 +23,9 @@
           เบอร์โทรติดต่อ : <label> {{ item.hometel }}</label>
         </p>
         <p>ที่อยู่ : {{ item.informaddr }}</p>
+      </div>
+      <div class="bg-buttonarea">
+        <button>แก้ไขประวัติ</button>
       </div>
     </div>
   </div>
@@ -76,10 +80,11 @@ export default {
   width: 80%;
   height: auto;
   background: rgba(125, 6, 51, 0.35);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 3px 3px 5px 0 rgba(0, 0, 0, 0.19);
   border-radius: 20px;
   padding: 20px;
 }
-.profile-data{
+.profile-data {
   margin-top: 15px;
 }
 .profile-data p {
@@ -91,5 +96,25 @@ export default {
   border: solid 1px #80073c;
   font-size: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 3px 3px 5px 0 rgba(0, 0, 0, 0.19);
+}
+.bg-buttonarea {
+  width: 100%;
+  height: 35px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: end;
+}
+.bg-buttonarea button{
+  height: 100%;
+  background: #fff;
+  border-radius: 10px;
+  border: solid 2px #80073c;
+  transition: all .3s;
+}
+.bg-buttonarea button:hover{
+  transform: scale(.96);
+}
+.bg-buttonarea button:active{
+  transform: scale(1);
 }
 </style>
