@@ -16,16 +16,16 @@
           <input
             class="text-box"
             type="text"
-            placeholder="กรุณาใส่เลขบัตรประชาชน"
+            placeholder="กรุณาใส่รหัสผ่านใหม่"
           />
         </div>
         <div class="input-form-forgot-following">
           <h2 class="label-input">ยืนยันรหัสผ่าน</h2>
-          <input class="text-box" type="text" placeholder="กรุณาใส่รหัสผ่าน" />
+          <input class="text-box" type="text" placeholder="กรุณาใส่รหัสผ่านใหม่" />
         </div>
       </div>
       <div class="content-button-forgot-following">
-        <button type="button" class="confirm-button-forgot-following">ยืนยัน</button>
+        <button type="button" @click="gotomain" class="confirm-button-forgot-following">ยืนยัน</button>
       </div>
     </div>
   </form>
@@ -34,6 +34,11 @@
 <script>
 export default {
   name: "forgot-following",
+  methods:{
+    gotomain(){
+      return this.$router.push("/");
+    }
+  }
 };
 </script>
 <style scoped>

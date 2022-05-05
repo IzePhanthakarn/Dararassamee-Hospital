@@ -12,16 +12,16 @@
       </div>
       <div class="box-input-form-register">
         <div class="input-form-register">
-          <h2 class="label-input">เลขบัตรประจำตัวประชาชน</h2>
+          <h2 class="label-input">อีเมล</h2>
           <input
             class="text-box"
             type="text"
-            placeholder="กรุณาใส่เลขบัตรประชาชน"
+            placeholder="กรุณาใส่อีเมล"
           />
         </div>
         <div class="input-form-register">
-          <h2 class="label-input">เบอร์โทรศัพท์</h2>
-          <input class="text-box" type="text" placeholder="กรุณาใส่รหัสผ่าน" />
+          <h2 class="label-input">เลขบัตรประชาชน</h2>
+          <input class="text-box" type="text" placeholder="กรุณาใส่เลขบัตรประชาชน" />
         </div>
         <div class="input-form-register">
           <h2 class="label-input">รหัสผ่าน</h2>
@@ -41,7 +41,7 @@
         </div>
       </div>
       <div class="content-button-register">
-        <button type="button" class="confirm-button-register">ยืนยัน</button>
+        <button type="button" @click="gotomain" class="confirm-button-register">ยืนยัน</button>
       </div>
     </div>
   </form>
@@ -50,6 +50,11 @@
 <script>
 export default {
   name: "register",
+  methods:{
+    gotomain(){
+      return this.$router.push("/");
+    }
+  }
 };
 </script>
 <style scoped>

@@ -6,11 +6,11 @@
       </div>
       <div class="login-input">
         <div class="identity-number">
-          <h2 class="label-input">เลขบัตรประจำตัวประชาชน</h2>
+          <h2 class="label-input">อีเมล</h2>
           <input
             class="text-box"
             type="text"
-            placeholder="กรุณาใส่เลขบัตรประชาชน"
+            placeholder="กรุณาใส่อีเมลของคุณ"
           />
         </div>
         <div class="password">

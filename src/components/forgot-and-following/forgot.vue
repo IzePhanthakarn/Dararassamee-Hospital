@@ -12,20 +12,20 @@
       </div>
       <div class="box-input-form-forgot">
         <div class="input-form-forgot">
-          <h2 class="label-input">เลขบัตรประจำตัวประชาชน</h2>
+          <h2 class="label-input">อีเมล</h2>
           <input
             class="text-box"
             type="text"
-            placeholder="กรุณาใส่เลขบัตรประชาชน"
+            placeholder="กรุณาใส่อีเมล"
           />
         </div>
         <div class="input-form-forgot">
-          <h2 class="label-input">เบอร์โทรศัพท์</h2>
-          <input class="text-box" type="text" placeholder="กรุณาใส่รหัสผ่าน" />
+          <h2 class="label-input">เลขบัตรประจำตัวประชาชน</h2>
+          <input class="text-box" type="text" placeholder="กรุณาใส่เลขบัตรประจำตัวประชาชน" />
         </div>
       </div>
       <div class="content-button-forgot">
-        <button type="button" class="confirm-button-forgot">ยืนยัน</button>
+        <button type="button" @click="gotofollowing" class="confirm-button-forgot">ยืนยัน</button>
       </div>
     </div>
   </form>
@@ -35,6 +35,11 @@
 
 export default {
   name: "forgot",
+  methods:{
+    gotofollowing(){
+      return this.$router.push("/forgot-following");
+    }
+  }
 };
 </script>
 <style scoped>

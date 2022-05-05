@@ -63,6 +63,7 @@
     height: 50px;
     width: 350px;
     border: none;
+    padding-left: 15px;
   }
   .text-box:hover,
   .text-box:focus {
