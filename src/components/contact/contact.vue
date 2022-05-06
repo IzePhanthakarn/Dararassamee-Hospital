@@ -23,7 +23,7 @@
             </div>
             <div class="box-info-email">
               <fa :icon="['fas', 'envelope']" class="edit-icon" />
-              <p>darassameeza007@gmail.com</p>
+              <p>dararassamee@gmail.com</p>
             </div>
           </div>
         </div>

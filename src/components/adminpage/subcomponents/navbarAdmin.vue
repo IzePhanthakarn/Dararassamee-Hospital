@@ -25,7 +25,7 @@
             </li>
             <li class="nav-item1 mx-4">
               <router-link class="nav-link" to="/admin-evaluation"
-                >แบบประเมิน</router-link
+                >ผลแบบประเมิน</router-link
               >
             </li>
             <li class="nav-item1 ms-4">
@@ -54,7 +54,7 @@
             รายชื่อผู้ป่วย
           </p>
           <p @click="gotoAdminEva" :class="{ 'button-select-active': Eva }">
-            แบบประเมิน
+            ผลแบบประเมิน
           </p>
           <p @click="gotoAdminNews" :class="{ 'button-select-active': News }">
             ข่าวประชาสัมพันธ์
@@ -207,7 +207,7 @@ button.logout-btn:active {
 .button-select-active {
   background-color: #2d9e87;
 }
-.sidebar-btn{
+.sidebar-btn {
   width: 100%;
   height: 45px;
   display: flex;
@@ -215,7 +215,7 @@ button.logout-btn:active {
   justify-content: center;
   margin-bottom: 15px;
 }
-.sidebar-btn button{
+.sidebar-btn button {
   width: 90%;
   height: 100%;
 }
